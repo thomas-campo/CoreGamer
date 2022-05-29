@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    max-width: 160em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "section1 section1 section1 section1"
+    "section2 section2 section2 section2"
+    "footer footer footer footer";
+}
+
+.header{
+    margin: 0px;
+    height: auto;
+    grid-area: header;
+    font-family: 'Cinzel', serif;
+    background-color: rgba(29, 28, 28, 0.986);
+    color: aliceblue;
+}
+
+.nombre a{
+    color: rgb(241, 241, 240);
+    text-decoration: none;
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.section1{
+    grid-area: section1;
+    text-align: center;
+}
+
+.titulo{
+    padding: 10px 0px;
+}
+
+.consolas{
+    text-align: start;
+}
+
+.cartas-consolas{
+    display: flex;
+    flex-flow: row;
+}
+
+.cartas-consolas div a img{
+    width: 50%;
+}
+
+.god-of-war{
+    width: 100%;
+}
+
+.section2{
+    width: 100%;
+    grid-area: section2;
+    text-align: center;
+}
+
+.cartas-juegos{
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.juegos{
+    text-align: start;
+    padding-left: 20px;
+}
+
+.img-consolas{
+    width: 100%;
+    height: auto;
+    height: 300px;
+    padding-top: 5px;
+}
+
+.carrito{
+    text-align: start;
+    padding: 20px;
+}
+
+.contacto{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.titulo-contactos{
+    text-align: center;
+}
+
+.escribinos{
+    background-color: rgb(27, 24, 24);
+    color: rgb(238, 242, 247);
+}
+
+.escribinos form h2{
+    padding-left: 20px;
+}
+
+.escribinos form{
+    display: flex;
+    flex-flow: column;
+
+}
+
+.escribinos form div{
+    text-align: left;
+    padding: 0px 3%;
+}
+
+.escribinos form div input, .escribinos form div textarea{
+    width: 97%;
+    padding: 0.5em;
+}
+
+.registrate{
+    background-color: black;
+    color: aliceblue;
+}
+
+.titulo-registrate{
+    text-align: left;
+    margin-left: 46.5%;
+}
+
+.registrate form{
+    display: flex;
+    flex-flow: column;
+}
+
+.registrate form div{
+    text-align: left;
+    padding: 0px 3%;
+}
+
+.registrate form div input, .registrate form div textarea{
+    width: 98%;
+    padding: 0.5em;
+}
+
+.boton-enviar{
+    width: 10%;
+}
+
+.iniciar-secion{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footer{
+    font-family: 'Cinzel', serif;
+    grid-area: footer;
+    background: rgb(110, 110, 110);
+}
+
+/*vista desktop*/
+@media screen and (min-width: 769px) {
+    .grid-container{
+        max-width: 160em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header header header"
+        "section1 section1 section1 section1"
+        "section2 section2 section2 section2"
+        "footer footer footer footer";
+    }
+    .header{
+        grid-area: header;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .section1{
+        grid-area: section1;
+    }
+    .imagen-consolas2{
+        display: none;
+    }
+    .section2{
+        grid-area: section2;                
+    }
+    .footer{
+        grid-area: footer;
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .redes{
+        text-align: center;
+        padding: 0px;
+    }
+    
+    .redes ul{
+        padding: 0px;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row;
+    }
+    
+    .metodos-de-pago{
+        text-align: center;
+        padding: 0px;
+    }
+    
+    .metodos-de-pago ul{
+        list-style-type: none;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+    
+}
+
+/*vista teblet*/
+
+@media screen and (min-width: 501px) and (max-width: 768px){
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "section1 section1"
+        "section2 section2"
+        "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+    .header{
+        grid-area: header;
+        background-color: rgb(29, 28, 28, 0.986);
+    }
+    .nombre{
+        text-align: center;
+    }
+    .nombre a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    .nav ul{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .nav ul li{
+        list-style-type: none;
+        padding: 2% 0%;
+    }
+    .nav ul li a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    .section1{
+        grid-area: section1;
+    }
+    .imagen-consolas2{
+        display: none;
+    }
+    .section2{
+        grid-area: section2;
+    }
+    .footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .metodos-de-pago, .redes{
+       text-align: center;
+    }
+
+    .metodos-de-pago ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    }
+    
+    .redes ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+/*vista celular*/
+
+@media screen and (max-width: 500px){
+    .grid-container{
+        max-width: 100%;
+        font-size: 60%;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "section1"
+        "section2"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .header{
+        grid-area: header;
+        align-items: center;
+    }
+    .nav ul{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .nombre{
+        text-align: center;
+    }
+    .nav ul li{
+        list-style-type: none;
+        padding: 2% 0%;
+    }
+    .section1{
+        grid-area: section1;
+    }
+    .img-consolas{
+        display: none;
+    }
+    .imagen-consolas2{
+        max-width: 100%;
+    }
+    .section2{
+        grid-area: section2;
+   }
+   .footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .metodos-de-pago, .redes{
+       text-align: center;
+   }
+
+   .metodos-de-pago ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    }
+    
+    .redes ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .imagen-footer{
+        max-width: 50%;
+    }
+
+}
