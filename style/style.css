@@ -4,7 +4,6 @@
 }
 
 .grid-container{
-    max-width: 160em;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -172,8 +171,6 @@
 /*vista desktop*/
 @media screen and (min-width: 769px) {
     .grid-container{
-        max-width: 160em;
-        width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
@@ -185,14 +182,23 @@
     }
     .header{
         grid-area: header;
+        padding: 5px 0px;
     }
     header{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    .nombre{
+        display: inline-block;
+        padding-left: 20px;
     }
     .nav ul{
         display: flex;
-        flex-direction: row;
+    }
+    .nav ul li{
+        padding-right: 15px;
+        position: relative;
+        top: 10px;
     }
     .section1{
         grid-area: section1;
@@ -233,6 +239,9 @@
         display: flex;
         flex-flow: row;
         justify-content: space-evenly;
+    }
+    .metodos-de-pago ul li, .redes ul li{
+        padding-left: 15px;
     }
     
 }
@@ -295,15 +304,18 @@
     }
 
     .metodos-de-pago ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+        list-style-type: none;
+        display: flex;
     }
     
     .redes ul{
         list-style-type: none;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+    }
+
+    .metodos-de-pago ul li, .redes ul li{
+        padding-left: 15px;
     }
 }
 
