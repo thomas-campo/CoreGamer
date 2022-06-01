@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-color: white;
+}
+
 .grid-container{
     width: 100%;
     display: grid;
@@ -37,6 +41,9 @@
     text-decoration: none;
     color: aliceblue;
 }
+.nav ul li a:hover{
+    color: rgb(221, 43, 43);
+}
 
 .section1{
     grid-area: section1;
@@ -49,15 +56,63 @@
 
 .consolas{
     text-align: start;
+    padding-left: 20px;
 }
 
 .cartas-consolas{
+    margin-bottom: 10px;
     display: flex;
     flex-flow: row;
+    justify-content: space-evenly;
 }
 
 .cartas-consolas div a img{
     width: 50%;
+}
+
+.cartas-juegos div a img{
+    width: 75%;
+}
+
+.cartas{
+    line-height: 25px;
+}
+
+.cartas h5{
+    padding-top: 5px;
+}
+
+.cartas input{
+    margin-bottom: 10px;
+}
+
+/*hover cartas*/
+.cartas-consolas input:hover, .cartas-juegos input:hover{
+    background-color: rgb(221, 43, 43);
+    border: 1px solid ;
+    border-radius: 5px;
+}
+
+.cartas{
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.cartas:hover{
+    box-shadow: 5px 5px 20px rgb(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.cartas input{
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: rgba(29, 28, 28, 0.986);
+    color: aliceblue;
 }
 
 .god-of-war{
@@ -89,14 +144,22 @@
     padding-top: 5px;
 }
 
+.titulo-carrito{
+    padding: 5px 0px;
+}
+
 .carrito{
     text-align: start;
-    padding: 20px;
+}
+
+.carrito h4{
+    padding: 10px 20px;
 }
 
 .contacto{
     text-align: left;
     padding-left: 20px;
+    line-height: 40px;
 }
 
 .titulo-contactos{
@@ -104,7 +167,7 @@
 }
 
 .escribinos{
-    background-color: rgb(27, 24, 24);
+    background-color: rgb(211, 76, 76);
     color: rgb(238, 242, 247);
 }
 
@@ -115,7 +178,9 @@
 .escribinos form{
     display: flex;
     flex-flow: column;
-
+    align-items: stretch;
+    width: max-content;
+    padding-left: 40%;
 }
 
 .escribinos form div{
@@ -128,19 +193,29 @@
     padding: 0.5em;
 }
 
+/*hover contacto y registrate*/
+#boton-enviar:hover{
+    background-color: rgba(53, 52, 52, 0.986);
+    border-radius: 6px;
+    color: aliceblue;
+}
+
 .registrate{
-    background-color: black;
+    background-color: rgb(211, 76, 76);
     color: aliceblue;
 }
 
 .titulo-registrate{
-    text-align: left;
-    margin-left: 46.5%;
+    text-align: center;
+    padding: 10px 0px;
 }
 
 .registrate form{
     display: flex;
     flex-flow: column;
+    align-items: stretch;
+    width: max-content;
+    padding-left: 40%;
 }
 
 .registrate form div{
@@ -153,19 +228,29 @@
     padding: 0.5em;
 }
 
-.boton-enviar{
-    width: 10%;
-}
-
 .iniciar-secion{
     text-decoration: none;
     color: aliceblue;
 }
 
+/*hover inicio de secion*/
+.iniciar-secion:hover{
+    color: rgba(53, 52, 52, 0.986);
+}
+
+#boton-enviar{
+    max-width: 30%;
+    margin-left: 35%;
+    border: 1px ;
+    border-radius: 6px;
+}
+
 .footer{
     font-family: 'Cinzel', serif;
     grid-area: footer;
-    background: rgb(110, 110, 110);
+    line-height: 50px;
+    background: rgba(53, 52, 52, 0.986);
+    color: aliceblue;
 }
 
 /*vista desktop*/
@@ -196,7 +281,7 @@
         display: flex;
     }
     .nav ul li{
-        padding-right: 15px;
+        padding-right: 50px;
         position: relative;
         top: 10px;
     }
