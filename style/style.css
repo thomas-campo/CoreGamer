@@ -156,6 +156,20 @@ body{
     padding: 10px 20px;
 }
 
+.añadir{
+    margin: 100px 0px;
+    line-height: 40px;
+}
+
+/*hover añadir*/
+.imagen-añadir:hover{
+    transform: scale(1.5);    
+}
+
+.imagen-añadir{
+    transition: all 1s;
+}
+
 .contacto{
     text-align: left;
     padding-left: 20px;
