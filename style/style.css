@@ -194,7 +194,6 @@ body{
     flex-flow: column;
     align-items: stretch;
     width: max-content;
-    padding-left: 40%;
 }
 
 .escribinos form div{
@@ -229,7 +228,7 @@ body{
     flex-flow: column;
     align-items: stretch;
     width: max-content;
-    padding-left: 40%;
+
 }
 
 .registrate form div{
@@ -242,12 +241,12 @@ body{
     padding: 0.5em;
 }
 
+/*hover inicio de secion*/
 .iniciar-secion{
     text-decoration: none;
     color: aliceblue;
 }
 
-/*hover inicio de secion*/
 .iniciar-secion:hover{
     color: rgba(53, 52, 52, 0.986);
 }
@@ -257,6 +256,12 @@ body{
     margin-left: 35%;
     border: 1px ;
     border-radius: 6px;
+}
+
+.registrate form, .escribinos form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer{
