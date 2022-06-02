@@ -267,13 +267,13 @@ body{
 .footer{
     font-family: 'Cinzel', serif;
     grid-area: footer;
-    line-height: 50px;
+    line-height: 20px;
     background: rgba(53, 52, 52, 0.986);
     color: aliceblue;
 }
 
 /*vista desktop*/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 900px) {
     .grid-container{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -352,7 +352,7 @@ body{
 
 /*vista teblet*/
 
-@media screen and (min-width: 501px) and (max-width: 768px){
+@media screen and (min-width: 501px) and (max-width: 899px){
     .grid-container{
         display: grid;
         grid-template-areas:
@@ -441,6 +441,7 @@ body{
     .header{
         grid-area: header;
         align-items: center;
+        padding-top: 5px;
     }
     .nav ul{
         display: flex;
@@ -480,13 +481,13 @@ body{
    .metodos-de-pago ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     }
     
     .redes ul{
         list-style-type: none;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .imagen-footer{
