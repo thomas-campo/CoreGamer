@@ -187,6 +187,7 @@ body{
 
 .escribinos form h2{
     padding-left: 20px;
+    padding-top: 10px;
 }
 
 .escribinos form{
@@ -241,8 +242,8 @@ body{
     padding: 0.5em;
 }
 
-/*hover inicio de secion*/
-.iniciar-secion{
+/*hover inicio de sesion*/
+.iniciar-sesion{
     text-decoration: none;
     color: aliceblue;
 }
@@ -267,7 +268,7 @@ body{
 .footer{
     font-family: 'Cinzel', serif;
     grid-area: footer;
-    line-height: 20px;
+    line-height: 40px;
     background: rgba(53, 52, 52, 0.986);
     color: aliceblue;
 }
