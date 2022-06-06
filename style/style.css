@@ -8,13 +8,19 @@ html, body{
     overflow-x: hidden;
 }
 
+body{
+    background-color: #06113C;
+    color: aliceblue;
+}
+
 .navbar{
     padding: 0;
     margin: 0;
 }
 
 .container-fluid{
-    background-color: rgb(211, 26, 12);
+    background-color: rgba(231, 128, 24, 0.986);
+    color: aliceblue;
 }
 
 .navbar-toggler{
@@ -23,7 +29,8 @@ html, body{
 
 .barra-nav{
     display: flex;
-    justify-content: flex-end
+    justify-content: center;
+    text-align: center;
 }
 
 .nav-item{
@@ -31,13 +38,11 @@ html, body{
     padding: 10px 0px;
 }
 
-
 .nav-link{
-    color: black;
+    color: #06113C ;
 }
 
 .navbar-brand{
-    color: black;
     padding-left: 10px;
 }
 
@@ -54,13 +59,39 @@ html, body{
     color: black;
 }
 
+.productos{
+    text-align: center;
+    background-color: #06113C;
+    color: aliceblue;
+}
+
+.consolas{
+    text-align: center;
+    background-color: #06113C;
+    color: aliceblue;
+}
+
+.cartas-consolas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.carta-consola{
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    padding-bottom: 10px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: aliceblue;
+    color: #06113C;
+}
+
 .juegos{
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-bottom: 40px;
     background-color: #06113C;
-    color: #dce0ec;
+    color: aliceblue;
 }
 
 .titulo-juegos{
@@ -84,13 +115,50 @@ html, body{
     color: #06113C;
 }
 
+.cartas{
+    width: 8rem;
+    font-size: 1rem;
+}
+
+.carta-accesorios{
+    width: 8rem;
+    font-size: 1rem;
+}
+
+.carta-consola{
+    width: 8rem;
+    font-size: 1rem;
+}
+
+.img-elden-ring{
+    padding: 10px 0px 25px 0px;
+}
+
+.img-borderlands{
+    padding: 10px 0px 25px 0px;
+}
+
+.img-gta{
+    padding: 15px 0px 25px 0px;
+}
+
+.img-valhalla{
+    padding: 10px 0px 30px 0px;
+}
+
 .accesorios{
-    margin-top: 60px;
-    margin-bottom: 60px;
     padding-bottom: 50px;
     background-color: #06113C;
     color: aliceblue;
     text-align: center;
+}
+
+.jostick-ps5{
+    margin: 0px 0px 18px 0px;
+}
+
+.jostick-xbox{
+    margin: 5px 0px 12px 0px;
 }
 
 .titulo-accesorios{
@@ -114,13 +182,95 @@ html, body{
     box-shadow: 2px 2px 5px;
 }
 
+/*hover de las cartas*/
+.carta-consola, .cartas, .carta-accesorios{
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.carta-consola:hover, .cartas:hover, .carta-accesorios:hover{
+    box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+    transform: translateY(-3%);
+}
+
+.jostick-ps4{
+
+}
+
+.jostick-nintendo{
+
+}
+
+.jostick-xbox{
+
+}
+
+.auricular-hyperex{
+
+}
+
 .img-consolas{
     width: 100%;
     max-width: 100%;
 }
 
+.titulo-carrito{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.carrito-vacio{
+    padding-left: 20px;
+}
+
+.añadir{
+    text-align: center;
+}
+
+.boton-añadir{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    border-radius: 60px;
+    padding: 5px;
+    transition: all 400ms ease;
+}
+
+.boton-añadir:hover{
+    transform: translateY(-4%);
+}
+
+.titulo-contacto{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.informacion{
+    padding-left: 20px;
+}
+
+.escribenos{
+    text-align: center;
+}
+
+.form{
+    width: 228px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textarea{
+    display: block;
+}
+
+.registrate{
+    text-align: center;
+}
+
 footer{
-    margin-top: 60px;
     padding: 0px 2%;
     text-align: center;
     background-color: #06113c;
@@ -129,11 +279,9 @@ footer{
 
 .quienes-somos{
     text-align: center;
+    margin-left: 15%;
 }
 
-.quienes-somos p{
-    text-align: start;
-}
 
 .logo-metodo-pago{
     width: 4rem;
@@ -146,4 +294,54 @@ footer{
 .copiryght{
     padding-left: 20px;
     text-align: end;
+}
+
+@media screen and (min-width: 768px) {
+    .barra-nav{
+        display: flex;
+        justify-content: flex-end
+    }
+    
+    .nav-link{
+        font-size: large;
+        font-weight: 500;
+    }
+
+    .navbar-brand{
+        font-size: x-large;
+        font-weight: 700;
+    }
+
+    .cartas{
+        width: 18rem;
+    }
+
+    .carta-consola{
+        width: 18rem;
+    }
+    
+    .img-elden-ring{
+        padding: 10px 0px 25px 0px;
+    }
+    
+    .img-borderlands{
+        padding: 10px 0px 25px 0px;
+    }
+    
+    .img-gta{
+        padding: 15px 0px 25px 0px;
+    }
+    
+    .img-valhalla{
+        padding: 10px 0px 30px 0px;
+    }
+
+    .carta-accesorios{
+        width: 18rem;
+    }
+
+    .quienes-somos{
+        margin-left: 0;
+    }
+    
 }
