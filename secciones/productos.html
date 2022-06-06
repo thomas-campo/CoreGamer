@@ -19,22 +19,35 @@
 </head>
 <body>
     <div class="grid-container">
-        <div class="header">
-            <header>
-                <div class="nombre">
-                    <a href="../index.html"><h1>core game</h1></a>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Core Gamer</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="barra-nav collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./carrito.html">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./registrate.html">Registrate</a>
+                    </li>
+                  </ul>
                 </div>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="../index.html">inicio</a></li>
-                        <li><a href="./productos.html">productos</a></li>
-                        <li><a href="./carrito.html">carrito</a></li>
-                        <li><a href="./contacto.html">contacto</a></li>
-                        <li><a href="./registrate.html">registrate</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+              </div>
+            </nav>
+        </header>
         <div class="section1">
             <section>
                     <h2 class="titulo">Productos</h2>
@@ -94,27 +107,57 @@
                 </div>
             </section>
         </div>
-        <div class="footer">
-            <footer>
-                <div class="metodos-de-pago">
-                    <h3>metodos de pago</h3>
-                    <ul>
-                        <li><img src="../img/mastercard.jpg" alt="mastercard" class="imagen-footer"></li>
-                        <li><img src="../img/visa.jpg" alt="visa" class="imagen-footer"></li>
-                        <li><img src="../img/american-express.jpg" alt="american-express" class="imagen-footer"></li>
-                        <li><img src="../img/paypal.jpg" alt="paypal" class="imagen-footer"></li>
-                    </ul>
-                </div>
-                <div class="redes">
-                    <h3>redes</h3>
-                    <ul>
-                        <li><a href="#"><img src="../img/twitter.png" alt="twitter" class="imagen-footer"></a></li>
-                        <li><a href="#"><img src="../img/instagram.png" alt="instagram" class="imagen-footer"></a></li>
-                        <li><a href="#"><img src="../img/facebook.png" alt="facebook" class="imagen-footer"></a></li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
+        <footer class="py-5">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Quienes somos</h5>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ullam laboriosam, sint amet est iste quam? Quis consectetur a pariatur voluptates ipsam hic, non nostrum.</p>
+              </div>
+        
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Metodos de Pago</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="" alt=""></a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="" alt=""></a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="" alt=""></a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="" alt=""></a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="" alt=""></a></li>
+                </ul>
+              </div>
+        
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Productos</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Carrito</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contacto</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Registrate</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-md-5 mb-3">
+                <form>
+                  <h5>Subscribite para recibir noticias</h5>
+                  <p>Resumen Mensual de Nuestras Novedades.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        
+            <div class="copiryght d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>© 2022 Company, Inc. All rights reserved.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+              </ul>
+            </div>
+          </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

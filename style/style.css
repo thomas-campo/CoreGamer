@@ -3,6 +3,117 @@
     padding: 0;
 }
 
-.d-block w-100{
-    width: 100%z;
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar{
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid{
+    background-color: rgb(231, 156, 16);
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.barra-nav{
+    display: flex;
+    justify-content: flex-end
+}
+
+.nav-item{
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+
+.nav-link{
+    color: black;
+}
+
+.navbar-brand{
+    color: black;
+    padding-left: 10px;
+}
+
+.boton-comprar{
+    margin-bottom: 4px;
+    padding: 2px 4px;
+    border-radius: 6px;
+    background-color: orange;
+    border-color: orange;
+}
+
+.boton-a{
+    text-decoration: none;
+    color: black;
+}
+
+.juegos{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-juegos{
+    padding-top: 10px;
+}
+
+.cartas-juegos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.cartas{
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.accesorios{
+    margin-top: 60px;
+    padding-bottom: 50px;
+    background-color: #06113C;
+    color: aliceblue;
+    text-align: center;
+}
+
+.titulo-accesorios{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cartas-accesorios{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.carta-accesorios{
+    align-self: center;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    color: #06113C;
+    border: 2px solid #dce0ec;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+}
+
+.img-consolas{
+    max-width: 100%;
+}
+
+footer{
+    text-align: center;
+}
+
+.copiryght{
+    padding-left: 20px;
 }
