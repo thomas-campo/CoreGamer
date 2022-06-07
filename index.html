@@ -13,70 +13,195 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+    <title>inicio</title>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="header">
-            <header>
-                    <div class="nombre">
-                        <a href="index.html"><h1>core game</h1></a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">Core Gamer</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="barra-nav collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./secciones/productos.html">Productos</a>
+                    </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./secciones/carrito.html">Carrito</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./secciones/registrate.html">Registrate</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+          <article>
+              <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./img/Assassins-Creed-banner.png" class="d-block w-100" alt="Assassin-Creed">
+                      <div class="carousel-caption d-none d-md-block">
+                        <button class="boton-comprar"><a class="boton-a" href="./secciones/productos.html">Comprar</a></button>
+                      </div>
                     </div>
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="index.html">inicio</a></li>
-                            <li><a href="./secciones/productos.html">productos</a></li>
-                            <li><a href="./secciones/carrito.html">carrito</a></li>
-                            <li><a href="./secciones/contacto.html">contacto</a></li>
-                            <li><a href="./secciones/registrate.html">registrate</a></li>
-                        </ul>
-                    </nav>
-            </header>
+                    <div class="carousel-item">
+                      <img src="./img/zelda-banner.png" class="d-block w-100" alt="zelda">
+                      <div class="carousel-caption d-none d-md-block">
+                        <button class="boton-comprar"><a class="boton-a" href="./secciones/productos.html">comprar</a></button>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/God-of-War-banner.jpg" class="d-block w-100" alt="God-of-War">
+                      <div class="carousel-caption d-none d-md-block">
+                        <button class="boton-comprar"><a class="boton-a" href="./secciones/productos.html">Comprar</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+          </article>
+          <article class="juegos pb-5">
+            <div>
+              <h2 class="titulo-juegos">Juegos</h2>
+            </div>
+            <div class="cartas-juegos">
+              <div class="cartas">
+                <img src="https://i0.wp.com/fhalcongaming.com/wp-content/uploads/2021/06/PS40191_2.png?fit=1080%2C1080&ssl=1" class="img-elden-ring card-img-top" alt="Elden-Ring">
+                  <h6 class="card-text">Elden Ring</h6>
+                  <p class="card-text">Play Station 5</p>
+                  <button class="boton-comprar">Comprar</button>
+              </div>
+              <div class="cartas">
+                <img src="https://media.gamestop.com/i/gamestop/11166937/Borderlands-3-Ultimate-Edition---PlayStation-5?$pdp$" class="img-borderlands card-img-top" alt="Borderlans-3">
+                  <h6 class="card-text">Borderlands 3</h6>
+                  <p class="card-text">Play Station 5</p>
+                  <button class="boton-comprar">Comprar</button>
+              </div>
+              <div class="cartas">
+                <img src="https://colombia.com.co/wp-content/uploads/2020/04/Grand-Theft-Auto-5-Para-Playstation-Para-Playstation-Bogota-Precios-Marketplace-Colombia-001.jpg" class="img-gta card-img-top" alt="GTA5">
+                  <h6 class="card-text">GTA 5</h6>
+                  <p class="card-text">Play Station 4</p>
+                  <button class="boton-comprar">Comprar</button>
+              </div>
+              <div class="cartas">
+                <img src="https://pasonyb2c.vtexassets.com/arquivos/ids/228846-800-800?v=637554367406230000&width=800&height=800&aspect=true" class="img-valhalla card-img-top" alt="Assassin-Creed-Valhalla">
+                  <h6 class="card-text">Assassins Creed Valhalla</h6>
+                  <p class="card-text">Play Station 5</p>
+                  <button class="boton-comprar">Comprar</button>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div>
+              <a href="./secciones/productos.html"><img class="img-consolas" src="https://www.supercompdigital.com/imag/marcas/nintendo_banner.jpg" alt="Nintendo-Switch"></a>
+            </div>
+          </article>
+        </section>
+        <section>
+          <article>
+            <div class="accesorios">
+              <div>
+              <h2 class="titulo-accesorios">Accesorios</h2>
+              </div>
+              <div class="cartas-accesorios">
+                <div class="carta-accesorios">
+                  <img src="https://promart.vteximg.com.br/arquivos/ids/2234193-1000-1000/image-c61a9f4196f34c7eae3a463f7c60a594.jpg?v=637687199039870000" class="jostick-ps5 card-img-top" alt="jostick-ps5">
+                  <h6>Jostick Ps5</h6>
+                  <p>precio: $12.000</p>
+                  <button class="boton-comprar">Comprar</button>
+                </div>
+                <div class="carta-accesorios">
+                  <img src="https://doto.vtexassets.com/arquivos/ids/166613/nintendo-switch-pro-controller-negro-dotomexico-vista-frontal.jpg?v=637521184423030000" class="jostick-nintendo card-img-top" alt="jostick-nintendo-switch">
+                  <h6>Jostick Nintendo Switch</h6>
+                  <p>Precio: $14.000</p>
+                  <button class="boton-comprar">Comprar</button>
+                </div>
+                <div class="carta-accesorios">
+                  <img src="https://images.fravega.com/f1000/5a4ba01d89206aea02e7385919f709bd.jpg" class="jostick-xbox card-img-top" alt="jostick-xbox">
+                  <h6>Jostick xbox</h6>
+                  <p>Precio: $16.000</p>
+                  <button class="boton-comprar">Comprar</button>
+                </div>
+                <div class="carta-accesorios">
+                  <img src="https://www.newmaster.com.ar/wp-content/uploads/2019/05/11.jpg" class="auricular-hyperex card-img-top" alt="auricular-hyperex">
+                  <h6>Auricular Hyperex</h6>
+                  <p>Precio: $5.000</p>
+                  <button class="boton-comprar">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div>
+              <a href="./secciones/productos.html"><img class="img-consolas" src="https://cdn.shopify.com/s/files/1/0442/2749/4055/files/ps5-banner-new_44e07ae9-bbc2-469d-aeba-09c6af05b4a4.jpg?v=1611284518" alt="play-station-5"></a>
+            </div>
+          </article>
+        </section>
+    </main>
+    <footer class="py-5">
+      <div class="row">
+        <div class="quienes-somos col-8 col-md-2 mb-3">
+          <h5>Quienes somos</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ullam laboriosam, sint amet est iste quam? Quis consectetur a pariatur voluptates ipsam hic, non nostrum.</p>
         </div>
-        <div class="section1">
-            <section>
-                <div>
-                    <a href="./secciones/productos.html"><img src="https://nacionbeta.com/wp-content/uploads/2018/01/S1-1280x720.jpg" alt="god-of.war" class="god-of-war"></a>
-                </div>
-            </section>
+  
+        <div class="col-6 col-md-3 mb-3">
+          <h5>Metodos de Pago</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="logo-metodo-pago" src="./img/visa.png" alt=""></a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="logo-metodo-pago" src="./img/mastercard.png" alt=""></a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="logo-metodo-pago" src="./img/american-expres.png" alt=""></a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="logo-metodo-pago" src="./img/mercado-pago.png" alt=""></a></li>
+          </ul>
         </div>
-        <div class="section2">
-            <section>
-                <div>
-                    <h3>Consolas</h3>
-                    <a href="./secciones/productos.html"><img src="https://www.cetrogar.com.ar/media/wysiwyg/banners_m2_play5.jpg" alt="play" class="img-consolas"></a>
-                    <a href="./secciones/productos.html"><img src="https://www.supercompdigital.com/imag/marcas/nintendo_banner.jpg" alt="nintendo" class="img-consolas"></a>
-                    <a href="./secciones/productos.html"><img src="https://www.tiendacpu.com/img/cms/Landing%20Pages/Xbox/Xbox_Banner_Family_Console_Amazon_1500x400.jpg" alt="xbox" class="img-consolas"></a>
-                </div>
-                <div>
-                    <a href="./secciones/productos.html"><img src="https://www.svg.com/img/gallery/the-sad-truth-about-the-new-ps5-pro-rumor/intro-1631192435.webp" alt="playstation-5" class="imagen-consolas2"></a>
-                    <a href="./secciones/productos.html"><img src="https://pic.clubic.com/v1/images/1749872/raw.webp?fit=max&width=1200&hash=2f2cfc44e07ada6f650acc287c68ea4ab6099b71" alt="nintendo-switch" class="imagen-consolas2"></a>
-                    <a href="./secciones/productos.html"><img src="https://www.jugomobile.com/wp-content/uploads/2022/04/Xbox-Series-X-podria-recibir-una-actualizacion-oculta-750x375.jpg" alt="xbox-series-x" class="imagen-consolas2"></a>
-                </div>
-            </section>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Redes</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="logo-redes" src="./img/instagram.png" alt=""></a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img class="logo-redes" src="./img/facebook.png" alt=""></a></li>
+            <li class="nav-item mb-2"><img href="#" class="nav-link p-0 text-muted"><img class="logo-redes" src="./img/twitter.png" alt=""></li>
         </div>
-        <div class="footer">
-            <footer>
-                <div class="metodos-de-pago">
-                    <h3>metodos de pago</h3>
-                    <ul>
-                        <li><img src="./img/mastercard.jpg" alt="mastercard" class="imagen-footer"></li>
-                        <li><img src="./img/visa.jpg" alt="visa" class="imagen-footer"></li>
-                        <li><img src="./img/american-express.jpg" alt="american-express" class="imagen-footer"></li>
-                        <li><img src="./img/paypal.jpg" alt="paypal" class="imagen-footer"></li>
-                    </ul>
-                </div>
-                <div class="redes">
-                    <h3>redes</h3>
-                    <ul>
-                        <li><a href="#"><img src="./img/twitter.png" alt="twitter" class="imagen-footer"></a></li>
-                        <li><a href="#"><img src="./img/instagram.png" alt="instagram" class="imagen-footer"></a></li>
-                        <li><a href="#"><img src="./img/facebook.png" alt="facebook" class="imagen-footer"></a></li>
-                    </ul>
-                </div>
-            </footer>
+  
+        <div class="col-md-5 mb-3">
+          <form>
+            <h5>Subscribite para recibir noticias</h5>
+            <p>Resumen Mensual de Nuestras Novedades.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribite</button>
+            </div>
+          </form>
         </div>
-    </div>
+      </div>
+  
+      <hr>
+      <div>
+        <p>© 2022 Company, Inc. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

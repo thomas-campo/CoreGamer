@@ -3,496 +3,333 @@
     padding: 0;
 }
 
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
-    background-color: white;
-}
-
-.grid-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "section1 section1 section1 section1"
-    "section2 section2 section2 section2"
-    "footer footer footer footer";
-}
-
-.header{
-    margin: 0px;
-    height: auto;
-    grid-area: header;
-    font-family: 'Cinzel', serif;
-    background-color: rgba(29, 28, 28, 0.986);
+    background-color: #06113C;
     color: aliceblue;
 }
 
-.nombre a{
-    color: rgb(241, 241, 240);
-    text-decoration: none;
+.navbar{
+    padding: 0;
+    margin: 0;
 }
 
-.nav ul{
-    list-style-type: none;
-}
-
-.nav ul li a{
-    text-decoration: none;
+.container-fluid{
+    background-color: rgba(231, 128, 24, 0.986);
     color: aliceblue;
 }
-.nav ul li a:hover{
-    color: rgb(221, 43, 43);
+
+.navbar-toggler{
+    border: none;
 }
 
-.section1{
-    grid-area: section1;
+.barra-nav{
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
-.titulo{
+.nav-item{
+    display: inline-block;
     padding: 10px 0px;
 }
 
-.consolas{
-    text-align: start;
-    padding-left: 20px;
+.nav-link{
+    color: #06113C ;
 }
 
-.cartas-consolas{
-    margin-bottom: 10px;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
+.navbar-brand{
+    padding-left: 10px;
 }
 
-.cartas-consolas div a img{
-    width: 50%;
-}
-
-.cartas-juegos div a img{
-    width: 75%;
-}
-
-.cartas{
-    line-height: 25px;
-}
-
-.cartas h5{
-    padding-top: 5px;
-}
-
-.cartas input{
-    margin-bottom: 10px;
-}
-
-/*hover cartas*/
-.cartas-consolas input:hover, .cartas-juegos input:hover{
-    background-color: rgb(221, 43, 43);
-    border: 1px solid ;
-    border-radius: 5px;
-}
-
-.cartas{
-    overflow: hidden;
+.boton-comprar{
+    margin-bottom: 4px;
+    padding: 2px 4px;
     border-radius: 6px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease;
+    background-color: orange;
+    border-color: orange;
 }
 
-.cartas:hover{
-    box-shadow: 5px 5px 20px rgb(0,0,0,0.4);
-    transform: translateY(-3%);
+.boton-a{
+    text-decoration: none;
+    color: black;
 }
 
-.cartas input{
-    margin-top: 5px;
-    padding: 5px;
-    border: 1px solid;
-    border-radius: 6px;
-    background-color: rgba(29, 28, 28, 0.986);
+.productos{
+    text-align: center;
+    background-color: #06113C;
     color: aliceblue;
 }
 
-.god-of-war{
-    width: 100%;
-}
-
-.section2{
-    width: 100%;
-    grid-area: section2;
+.consolas{
     text-align: center;
+    background-color: #06113C;
+    color: aliceblue;
 }
 
-.cartas-juegos{
-    padding-bottom: 20px;
+.cartas-consolas{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
+.carta-consola{
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    padding-bottom: 10px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: aliceblue;
+    color: #06113C;
+}
+
 .juegos{
-    text-align: start;
-    padding-left: 20px;
+    text-align: center;
+    background-color: #06113C;
+    color: aliceblue;
+}
+
+.titulo-juegos{
+    padding-top: 10px;
+}
+
+.cartas-juegos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.cartas{
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    padding-bottom: 10px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: aliceblue;
+    color: #06113C;
+}
+
+.cartas{
+    width: 8rem;
+    font-size: 1rem;
+}
+
+.carta-accesorios{
+    width: 8rem;
+    font-size: 1rem;
+}
+
+.carta-consola{
+    width: 8rem;
+    font-size: 1rem;
+}
+
+.img-elden-ring{
+    padding: 10px 0px 25px 0px;
+}
+
+.img-borderlands{
+    padding: 10px 0px 25px 0px;
+}
+
+.img-gta{
+    padding: 15px 0px 25px 0px;
+}
+
+.img-valhalla{
+    padding: 10px 0px 30px 0px;
+}
+
+.accesorios{
+    padding-bottom: 50px;
+    background-color: #06113C;
+    color: aliceblue;
+    text-align: center;
+}
+
+.jostick-ps5{
+    margin: 0px 0px 18px 0px;
+}
+
+.jostick-xbox{
+    margin: 5px 0px 12px 0px;
+}
+
+.titulo-accesorios{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cartas-accesorios{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.carta-accesorios{
+    align-self: center;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    color: #06113C;
+    border: 2px solid #dce0ec;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+}
+
+/*hover de las cartas*/
+.carta-consola, .cartas, .carta-accesorios{
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.carta-consola:hover, .cartas:hover, .carta-accesorios:hover{
+    box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+    transform: translateY(-3%);
 }
 
 .img-consolas{
     width: 100%;
-    height: auto;
-    height: 300px;
-    padding-top: 5px;
+    max-width: 100%;
 }
 
 .titulo-carrito{
-    padding: 5px 0px;
-}
-
-.carrito{
-    text-align: start;
-}
-
-.carrito h4{
-    padding: 10px 20px;
-}
-
-.añadir{
-    margin: 100px 0px;
-    line-height: 40px;
-}
-
-/*hover añadir*/
-.imagen-añadir:hover{
-    transform: scale(1.5);    
-}
-
-.imagen-añadir{
-    transition: all 1s;
-}
-
-.contacto{
-    text-align: left;
-    padding-left: 20px;
-    line-height: 40px;
-}
-
-.titulo-contactos{
     text-align: center;
-}
-
-.escribinos{
-    background-color: rgb(211, 76, 76);
-    color: rgb(238, 242, 247);
-}
-
-.escribinos form h2{
-    padding-left: 20px;
     padding-top: 10px;
 }
 
-.escribinos form{
-    display: flex;
-    flex-flow: column;
-    align-items: stretch;
-    width: max-content;
+.carrito-vacio{
+    padding-left: 20px;
 }
 
-.escribinos form div{
-    text-align: left;
-    padding: 0px 3%;
-}
-
-.escribinos form div input, .escribinos form div textarea{
-    width: 97%;
-    padding: 0.5em;
-}
-
-/*hover contacto y registrate*/
-#boton-enviar:hover{
-    background-color: rgba(53, 52, 52, 0.986);
-    border-radius: 6px;
-    color: aliceblue;
-}
-
-.registrate{
-    background-color: rgb(211, 76, 76);
-    color: aliceblue;
-}
-
-.titulo-registrate{
+.añadir{
     text-align: center;
-    padding: 10px 0px;
 }
 
-.registrate form{
-    display: flex;
-    flex-flow: column;
-    align-items: stretch;
-    width: max-content;
-
+.boton-añadir{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    border-radius: 60px;
+    padding: 5px;
+    transition: all 400ms ease;
 }
 
-.registrate form div{
-    text-align: left;
-    padding: 0px 3%;
+.boton-añadir:hover{
+    transform: translateY(-4%);
 }
 
-.registrate form div input, .registrate form div textarea{
-    width: 98%;
-    padding: 0.5em;
+.titulo-contacto{
+    text-align: center;
+    margin: 10px 0px;
 }
 
-/*hover inicio de sesion*/
-.iniciar-sesion{
-    text-decoration: none;
-    color: aliceblue;
+.informacion{
+    padding-left: 20px;
 }
 
-.iniciar-secion:hover{
-    color: rgba(53, 52, 52, 0.986);
+.escribenos{
+    text-align: center;
 }
 
-#boton-enviar{
-    max-width: 30%;
-    margin-left: 35%;
-    border: 1px ;
-    border-radius: 6px;
-}
-
-.registrate form, .escribinos form{
-    display: block;
+.form{
+    width: 228px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.footer{
-    font-family: 'Cinzel', serif;
-    grid-area: footer;
-    line-height: 40px;
-    background: rgba(53, 52, 52, 0.986);
+.textarea{
+    display: block;
+}
+
+.registrate{
+    text-align: center;
+}
+
+footer{
+    padding: 0px 2%;
+    text-align: center;
+    background-color: #06113c;
     color: aliceblue;
 }
 
-/*vista desktop*/
-@media screen and (min-width: 900px) {
-    .grid-container{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "header header header header"
-        "section1 section1 section1 section1"
-        "section2 section2 section2 section2"
-        "footer footer footer footer";
-    }
-    .header{
-        grid-area: header;
-        padding: 5px 0px;
-    }
-    header{
-        display: flex;
-        justify-content: space-between;
-    }
-    .nombre{
-        display: inline-block;
-        padding-left: 20px;
-    }
-    .nav ul{
-        display: flex;
-    }
-    .nav ul li{
-        padding-right: 50px;
-        position: relative;
-        top: 10px;
-    }
-    .section1{
-        grid-area: section1;
-    }
-    .imagen-consolas2{
-        display: none;
-    }
-    .section2{
-        grid-area: section2;                
-    }
-    .footer{
-        grid-area: footer;
-    }
-    footer{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    .redes{
-        text-align: center;
-        padding: 0px;
-    }
-    
-    .redes ul{
-        padding: 0px;
-        list-style-type: none;
-        display: flex;
-        flex-flow: row;
-    }
-    
-    .metodos-de-pago{
-        text-align: center;
-        padding: 0px;
-    }
-    
-    .metodos-de-pago ul{
-        list-style-type: none;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-evenly;
-    }
-    .metodos-de-pago ul li, .redes ul li{
-        padding-left: 15px;
-    }
-    
+.quienes-somos{
+    text-align: center;
+    margin-left: 15%;
 }
 
-/*vista teblet*/
 
-@media screen and (min-width: 501px) and (max-width: 899px){
-    .grid-container{
-        display: grid;
-        grid-template-areas:
-        "header header"
-        "section1 section1"
-        "section2 section2"
-        "footer footer";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-    }
-    .header{
-        grid-area: header;
-        background-color: rgb(29, 28, 28, 0.986);
-    }
-    .nombre{
-        text-align: center;
-    }
-    .nombre a{
-        text-decoration: none;
-        color: aliceblue;
-    }
-    .nav ul{
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-    }
-    .nav ul li{
-        list-style-type: none;
-        padding: 2% 0%;
-    }
-    .nav ul li a{
-        text-decoration: none;
-        color: aliceblue;
-    }
-    .section1{
-        grid-area: section1;
-    }
-    .imagen-consolas2{
-        display: none;
-    }
-    .section2{
-        grid-area: section2;
-    }
-    .footer{
-        grid-area: footer;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .metodos-de-pago, .redes{
-       text-align: center;
-    }
-
-    .metodos-de-pago ul{
-        list-style-type: none;
-        display: flex;
-    }
-    
-    .redes ul{
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-    }
-
-    .metodos-de-pago ul li, .redes ul li{
-        padding-left: 15px;
-    }
+.logo-metodo-pago{
+    width: 4rem;
 }
 
-/*vista celular*/
+.logo-redes{
+    width: 3rem;
+}
 
-@media screen and (max-width: 500px){
-    .grid-container{
-        max-width: 100%;
-        font-size: 60%;
-        display: grid;
-        grid-template-areas:
-        "header"
-        "section1"
-        "section2"
-        "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-    }
-    .header{
-        grid-area: header;
-        align-items: center;
-        padding-top: 5px;
-    }
-    .nav ul{
+.copiryght{
+    padding-left: 20px;
+    text-align: end;
+}
+
+@media screen and (min-width: 768px) {
+    .barra-nav{
         display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-    }
-    .nombre{
-        text-align: center;
-    }
-    .nav ul li{
-        list-style-type: none;
-        padding: 2% 0%;
-    }
-    .section1{
-        grid-area: section1;
-    }
-    .img-consolas{
-        display: none;
-    }
-    .imagen-consolas2{
-        max-width: 100%;
-    }
-    .section2{
-        grid-area: section2;
-   }
-   .footer{
-        grid-area: footer;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-   }
-
-   .metodos-de-pago, .redes{
-       text-align: center;
-   }
-
-   .metodos-de-pago ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
+        justify-content: flex-end
     }
     
-    .redes ul{
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
+    .nav-link{
+        font-size: large;
+        font-weight: 500;
     }
 
-    .imagen-footer{
-        max-width: 80%;
+    .navbar-brand{
+        font-size: x-large;
+        font-weight: 700;
     }
 
+    .cartas{
+        width: 18rem;
+    }
+
+    .carta-consola{
+        width: 18rem;
+    }
+    
+    .img-elden-ring{
+        padding: 10px 0px 25px 0px;
+    }
+    
+    .img-borderlands{
+        padding: 10px 0px 25px 0px;
+    }
+    
+    .img-gta{
+        padding: 15px 0px 25px 0px;
+    }
+    
+    .img-valhalla{
+        padding: 10px 0px 30px 0px;
+    }
+
+    .jostick-xbox, .jostick-ps5{
+        margin: 0;
+    }
+
+    .carta-accesorios{
+        width: 18rem;
+    }
+
+    .quienes-somos{
+        margin-left: 0;
+    }
+    
 }
