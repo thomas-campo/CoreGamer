@@ -280,7 +280,7 @@ footer{
     text-align: end;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     .barra-nav{
         display: flex;
         justify-content: flex-end
