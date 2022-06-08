@@ -40,10 +40,14 @@ body{
 
 .nav-link{
     color: #06113C ;
+    font-weight: 700;
 }
 
 .navbar-brand{
+    font-size: x-large;
+    font-weight: 700;
     padding-left: 10px;
+    color: #06113C;
 }
 
 .boton-comprar{
@@ -288,11 +292,11 @@ footer{
     
     .nav-link{
         font-size: large;
-        font-weight: 500;
+        font-weight: 700;
     }
 
     .navbar-brand{
-        font-size: x-large;
+        font-size: xx-large;
         font-weight: 700;
     }
 
