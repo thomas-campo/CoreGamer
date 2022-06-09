@@ -47,6 +47,7 @@ body{
     font-size: x-large;
     font-weight: 700;
     padding-left: 10px;
+    margin-bottom: 5px;
     color: #06113C;
 }
 
@@ -298,6 +299,7 @@ footer{
     .navbar-brand{
         font-size: xx-large;
         font-weight: 700;
+        
     }
 
     .cartas{
