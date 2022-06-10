@@ -1,0 +1,59 @@
+.barra-nav{
+    padding: 0;
+    margin: 0;
+    
+    .container-nav{
+        background-color: rgba(231, 128, 24, 0.986);
+        color: aliceblue;
+
+        .nombre-sitio{
+            font-size: x-large;
+            font-weight: 700;
+            padding-left: 10px;
+            margin-bottom: 5px;
+            color: #06113C;
+        }
+
+        .navbar-toggler{
+            border: none;
+        }
+        
+        .secciones{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+    
+            .lista-secciones{
+                display: inline-block;
+                padding: 10px 0px;
+                
+                .nombres-secciones{
+                    color: #06113C ;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .barra-nav{
+        .container-nav{
+            .nombre-sitio{
+                font-size: xx-large;
+                font-weight: 700;
+                
+            }
+
+            .secciones{
+                display: flex;
+                justify-content: end;
+                
+                .nombres-secciones{
+                    font-size: large;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

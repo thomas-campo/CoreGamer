@@ -1,0 +1,274 @@
+.boton-comprar{
+    margin-bottom: 4px;
+    padding: 2px 4px;
+    border-radius: 6px;
+    background-color: orange;
+    border-color: orange;
+
+    .boton-a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.productos{
+    text-align: center;
+    background-color: #06113C;
+    color: aliceblue;
+
+    .consolas{
+        text-align: center;
+        background-color: #06113C;
+        color: aliceblue;
+    }
+
+    .cartas-consolas{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        .carta-consola{
+            border: 1px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px;
+            padding-bottom: 10px;
+            margin: 10px;
+            overflow: hidden;
+            background-color: aliceblue;
+            color: #06113C;
+            width: 8rem;
+            font-size: 1rem;
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+            cursor: default;
+            transition: all 400ms ease;
+        }
+
+        /*hover a las cartas de las consolas*/
+        .carta-consola:hover{
+            box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+            transform: translateY(-3%);
+        }
+    }
+}
+
+.juegos{
+    text-align: center;
+    background-color: #06113C;
+    color: aliceblue;
+
+    .titulo-juegos{
+        padding-top: 10px;
+    }
+
+    .cartas-juegos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        .cartas{
+            border: 1px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px;
+            padding-bottom: 10px;
+            margin: 10px;
+            overflow: hidden;
+            background-color: aliceblue;
+            color: #06113C;
+            width: 8rem;
+            font-size: 1rem;
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+            cursor: default;
+            transition: all 400ms ease;
+
+            .img-elden-ring{
+                padding: 10px 0px 25px 0px;
+            }
+            
+            .img-borderlands{
+                padding: 10px 0px 25px 0px;
+            }
+            
+            .img-gta{
+                padding: 15px 0px 25px 0px;
+            }
+            
+            .img-valhalla{
+                padding: 10px 0px 30px 0px;
+            }
+        }
+        
+        /*hover a las cartas de los juegos*/
+        .cartas:hover{
+            box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+            transform: translateY(-3%);
+        }
+    }
+}
+
+.accesorios{
+    padding-bottom: 50px;
+    background-color: #06113C;
+    color: aliceblue;
+    text-align: center;
+
+    .titulo-accesorios{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .cartas-accesorios{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        .carta-accesorios{
+            align-self: center;
+            margin: 10px;
+            background-color: aliceblue;
+            color: #06113C;
+            border: 2px solid #dce0ec;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px;
+            width: 8rem;
+            font-size: 1rem;
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+            cursor: default;
+            transition: all 400ms ease;
+            
+            .jostick-ps5{
+                margin: 0px 0px 18px 0px;
+            }
+            
+            .jostick-xbox{
+                margin: 5px 0px 12px 0px;
+            }
+        }
+
+        /*hover a las cartas de los accesorios*/
+        .carta-accesorios:hover{
+            box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+            transform: translateY(-3%);
+        }
+    }
+}
+
+.banner{
+
+    .img-consolas{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.carrito{
+
+    .titulo-carrito{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .carrito-vacio{
+        padding-left: 20px;
+    }
+
+    .añadir{
+        text-align: center;
+
+        .boton-añadir{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            background-color: aliceblue;
+            border-radius: 60px;
+            padding: 5px;
+            transition: all 400ms ease;
+        }
+        
+        /*hover del boton añadir*/
+        .boton-añadir:hover{
+            transform: translateY(-4%);
+        }
+    }
+}
+
+.contactos{
+    .titulo-contacto{
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .informacion{
+        padding-left: 20px;
+    }
+}
+
+.escribenos{
+    text-align: center;
+
+    .form{
+        width: 228px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.registrate{
+    text-align: center;
+    
+    .form{
+        width: 228px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .juegos{
+        .cartas-juegos{
+            .cartas{
+                width: 18rem;
+        
+                .img-elden-ring{
+                    padding: 10px 0px 25px 0px;
+                }
+                
+                .img-borderlands{
+                    padding: 10px 0px 25px 0px;
+                }
+                
+                .img-gta{
+                    padding: 15px 0px 25px 0px;
+                }
+                
+                .img-valhalla{
+                    padding: 10px 0px 30px 0px;
+                }
+            }
+        }
+    }
+    
+    .productos{
+        .cartas-consolas{
+            .carta-consola{
+                width: 18rem;
+            }
+        }
+    }
+
+    .accesorios{
+        .cartas-accesorios{
+            .carta-accesorios{
+                width: 18rem;
+        
+                .jostick-xbox, .jostick-ps5{
+                    margin: 0;
+                }
+            }
+        }
+        }
+    }

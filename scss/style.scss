@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #06113C;
+    color: aliceblue;
+}
+
+@import "header";
+@import "main";
+@import "footer";
+
+/*no enviar la carpeta node-modules con el comando git*/

@@ -1,0 +1,28 @@
+footer{
+    padding: 0px 2%;
+    text-align: center;
+    background-color: #06113c;
+    color: aliceblue;
+    
+    .quienes-somos{
+        text-align: center;
+        margin-left: 15%;
+    }
+    
+    .logo-metodo-pago{
+        width: 4rem;
+    }
+    
+    .logo-redes{
+        width: 3rem;
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    footer{
+        .quienes-somos{
+            margin-left: 0;
+        }
+    }
+}
