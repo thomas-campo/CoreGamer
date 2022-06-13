@@ -1,22 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-html, body{
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-body{
-    background-color: #06113C;
-    color: aliceblue;
-}
-
 $color1: #fa8c1ffb;
 $color2: #06113C;
 $color3: #f0f8ff;
 
+@import "body";
 @import "header";
 @import "main";
 @import "footer";
