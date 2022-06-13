@@ -3,15 +3,15 @@
     margin: 0;
     
     .container-nav{
-        background-color: rgba(231, 128, 24, 0.986);
-        color: aliceblue;
+        background-color: $color1;
+        color: $color3;
 
         .nombre-sitio{
             font-size: x-large;
             font-weight: 700;
             padding-left: 10px;
             margin-bottom: 5px;
-            color: #06113C;
+            color: $color2;
         }
 
         .navbar-toggler{
@@ -28,7 +28,7 @@
                 padding: 10px 0px;
                 
                 .nombres-secciones{
-                    color: #06113C ;
+                    color: $color2 ;
                     font-weight: 700;
                 }
             }
