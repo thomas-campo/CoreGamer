@@ -1,9 +1,13 @@
 .boton-comprar{
     margin-bottom: 4px;
-    padding: 2px 4px;
-    border-radius: 6px;
+    padding: 4px 8px;
+    border: 0px;
+    border-radius: 10px;
     background-color: $color1;
     border-color: $color1;
+    &:hover{
+        background-color: $color2-2;
+    }
 
     .boton-a{
         text-decoration: none;

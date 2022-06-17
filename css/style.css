@@ -25,16 +25,12 @@ body {
       color: #06113C; }
     .barra-nav .container-nav .navbar-toggler {
       border: none; }
-    .barra-nav .container-nav .secciones {
-      display: flex;
-      justify-content: center;
-      text-align: center; }
-      .barra-nav .container-nav .secciones .lista-secciones {
-        display: inline-block;
-        padding: 10px 0px; }
-        .barra-nav .container-nav .secciones .lista-secciones .nombres-secciones {
-          color: #06113C;
-          font-weight: 700; }
+    .barra-nav .container-nav .secciones .lista-secciones {
+      display: inline-block;
+      padding: 10px 0px; }
+      .barra-nav .container-nav .secciones .lista-secciones .nombres-secciones {
+        color: #06113C;
+        font-weight: 700; }
 
 @media screen and (min-width: 992px) {
   .barra-nav .container-nav .nombre-sitio {
@@ -49,10 +45,13 @@ body {
 
 .boton-comprar {
   margin-bottom: 4px;
-  padding: 2px 4px;
-  border-radius: 6px;
+  padding: 4px 8px;
+  border: 0px;
+  border-radius: 10px;
   background-color: #fa8c1ffb;
   border-color: #fa8c1ffb; }
+  .boton-comprar:hover {
+    background-color: #fa8c1fde; }
   .boton-comprar .boton-a {
     text-decoration: none;
     color: #06113C; }
