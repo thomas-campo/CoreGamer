@@ -6,7 +6,7 @@
     background-color: $color1;
     border-color: $color1;
     &:hover{
-        background-color: $color2-2;
+        background-color: $color1-2;
     }
 
     .boton-a{
@@ -16,14 +16,22 @@
 }
 
 .productos{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.consolas{
+    margin-bottom: 8px;
     text-align: center;
     background-color: $color2;
     color: $color3;
 
-    .consolas{
+    .titulo-consola{
+        padding: 10px 0px;
         text-align: center;
         background-color: $color2;
-        color: $color3;
+        color: $color1;
+        
     }
 
     .cartas-consolas{
@@ -47,23 +55,24 @@
             box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
             cursor: default;
             transition: all 400ms ease;
-        }
-
-        /*hover a las cartas de las consolas*/
-        .carta-consola:hover{
-            box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
-            transform: translateY(-3%);
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+                transform: translateY(-1%);
+            }
         }
     }
-}
+}    
 
 .juegos{
+    margin-bottom: 8px;
     text-align: center;
     background-color: $color2;
     color: $color3;
 
     .titulo-juegos{
-        padding-top: 10px;
+        padding: 10px 0px;
+        background-color: $color2;
+        color: $color1;
     }
 
     .cartas-juegos{
@@ -103,18 +112,15 @@
             .img-valhalla{
                 padding: 10px 0px 30px 0px;
             }
-        }
-        
-        /*hover a las cartas de los juegos*/
-        .cartas:hover{
-            box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
-            transform: translateY(-3%);
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+                transform: translateY(-1%);
+            }
         }
     }
 }
 
 .accesorios{
-    padding-bottom: 50px;
     background-color: $color2;
     color: $color3;
     text-align: center;
@@ -122,6 +128,8 @@
     .titulo-accesorios{
         padding-top: 10px;
         padding-bottom: 10px;
+        background-color: $color2;
+        color: $color1;
     }
 
     .cartas-accesorios{
@@ -152,18 +160,16 @@
             .jostick-xbox{
                 margin: 5px 0px 12px 0px;
             }
-        }
-
-        /*hover a las cartas de los accesorios*/
-        .carta-accesorios:hover{
-            box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
-            transform: translateY(-3%);
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+                transform: translateY(-1%);
+            }
         }
     }
 }
 
 .banner{
-
+    margin: 10px 0px;
     .img-consolas{
         width: 100%;
         max-width: 100%;
@@ -268,7 +274,7 @@
         .cartas-accesorios{
             .carta-accesorios{
                 width: 18rem;
-        
+                
                 .jostick-xbox, .jostick-ps5{
                     margin: 0;
                 }

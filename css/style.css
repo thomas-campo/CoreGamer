@@ -39,6 +39,10 @@ body {
   .barra-nav .container-nav .secciones {
     display: flex;
     justify-content: end; }
+    .barra-nav .container-nav .secciones .lista-secciones {
+      padding-right: 20px; }
+      .barra-nav .container-nav .secciones .lista-secciones .nombres-secciones:hover {
+        color: azure; }
     .barra-nav .container-nav .secciones .nombres-secciones {
       font-size: large;
       font-weight: 700; } }
@@ -51,25 +55,30 @@ body {
   background-color: #fa8c1ffb;
   border-color: #fa8c1ffb; }
   .boton-comprar:hover {
-    background-color: #fa8c1fde; }
+    background-color: #e9831efb; }
   .boton-comprar .boton-a {
     text-decoration: none;
     color: #06113C; }
 
 .productos {
+  padding-top: 10px;
+  text-align: center; }
+
+.consolas {
+  margin-bottom: 8px;
   text-align: center;
   background-color: #06113C;
   color: #f0f8ff; }
-  .productos .consolas {
+  .consolas .titulo-consola {
+    padding: 10px 0px;
     text-align: center;
     background-color: #06113C;
-    color: #f0f8ff; }
-  .productos .cartas-consolas {
+    color: #fa8c1ffb; }
+  .consolas .cartas-consolas {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    /*hover a las cartas de las consolas*/ }
-    .productos .cartas-consolas .carta-consola {
+    justify-content: space-around; }
+    .consolas .cartas-consolas .carta-consola {
       border: 1px;
       border-radius: 8px;
       box-shadow: 2px 2px 5px;
@@ -85,21 +94,23 @@ body {
       box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
       cursor: default;
       transition: all 400ms ease; }
-    .productos .cartas-consolas .carta-consola:hover {
-      box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
-      transform: translateY(-3%); }
+      .consolas .cartas-consolas .carta-consola:hover {
+        box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+        transform: translateY(-1%); }
 
 .juegos {
+  margin-bottom: 8px;
   text-align: center;
   background-color: #06113C;
   color: #f0f8ff; }
   .juegos .titulo-juegos {
-    padding-top: 10px; }
+    padding: 10px 0px;
+    background-color: #06113C;
+    color: #fa8c1ffb; }
   .juegos .cartas-juegos {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    /*hover a las cartas de los juegos*/ }
+    justify-content: space-around; }
     .juegos .cartas-juegos .cartas {
       border: 1px;
       border-radius: 8px;
@@ -124,23 +135,23 @@ body {
         padding: 15px 0px 25px 0px; }
       .juegos .cartas-juegos .cartas .img-valhalla {
         padding: 10px 0px 30px 0px; }
-    .juegos .cartas-juegos .cartas:hover {
-      box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
-      transform: translateY(-3%); }
+      .juegos .cartas-juegos .cartas:hover {
+        box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+        transform: translateY(-1%); }
 
 .accesorios {
-  padding-bottom: 50px;
   background-color: #06113C;
   color: #f0f8ff;
   text-align: center; }
   .accesorios .titulo-accesorios {
     padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    background-color: #06113C;
+    color: #fa8c1ffb; }
   .accesorios .cartas-accesorios {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    /*hover a las cartas de los accesorios*/ }
+    justify-content: space-around; }
     .accesorios .cartas-accesorios .carta-accesorios {
       align-self: center;
       margin: 10px;
@@ -160,13 +171,15 @@ body {
         margin: 0px 0px 18px 0px; }
       .accesorios .cartas-accesorios .carta-accesorios .jostick-xbox {
         margin: 5px 0px 12px 0px; }
-    .accesorios .cartas-accesorios .carta-accesorios:hover {
-      box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
-      transform: translateY(-3%); }
+      .accesorios .cartas-accesorios .carta-accesorios:hover {
+        box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+        transform: translateY(-1%); }
 
-.banner .img-consolas {
-  width: 100%;
-  max-width: 100%; }
+.banner {
+  margin: 10px 0px; }
+  .banner .img-consolas {
+    width: 100%;
+    max-width: 100%; }
 
 .carrito .titulo-carrito {
   text-align: center;

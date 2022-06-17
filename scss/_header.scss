@@ -38,13 +38,22 @@
             .nombre-sitio{
                 font-size: xx-large;
                 font-weight: 700;
-                
             }
 
             .secciones{
                 display: flex;
                 justify-content: end;
                 
+                .lista-secciones{
+                    padding-right: 20px;
+                    
+                    .nombres-secciones{
+                        &:hover{
+                            color: azure;
+                        }
+                    }
+                }
+
                 .nombres-secciones{
                     font-size: large;
                     font-weight: 700;
