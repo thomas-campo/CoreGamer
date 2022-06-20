@@ -70,7 +70,7 @@ body {
   background-color: #06113C;
   color: #f0f8ff; }
   .consolas .titulo-consola {
-    padding: 10px 0px;
+    padding: 5px 0px;
     text-align: center;
     background-color: #06113C;
     color: #fa8c1ffb; }
@@ -104,79 +104,82 @@ body {
   background-color: #06113C;
   color: #f0f8ff; }
   .juegos .titulo-juegos {
-    padding: 10px 0px;
+    padding: 5px 0px;
+    text-align: center;
     background-color: #06113C;
     color: #fa8c1ffb; }
   .juegos .cartas-juegos {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around; }
-    .juegos .cartas-juegos .cartas {
-      border: 1px;
-      border-radius: 8px;
-      box-shadow: 2px 2px 5px;
-      padding-bottom: 10px;
-      margin: 10px;
-      overflow: hidden;
-      background-color: #f0f8ff;
-      color: #06113C;
-      width: 8rem;
-      font-size: 1rem;
-      overflow: hidden;
-      border-radius: 6px;
-      box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
-      cursor: default;
-      transition: all 400ms ease; }
-      .juegos .cartas-juegos .cartas .img-elden-ring {
-        padding: 10px 0px 25px 0px; }
-      .juegos .cartas-juegos .cartas .img-borderlands {
-        padding: 10px 0px 25px 0px; }
-      .juegos .cartas-juegos .cartas .img-gta {
-        padding: 15px 0px 25px 0px; }
-      .juegos .cartas-juegos .cartas .img-valhalla {
-        padding: 10px 0px 30px 0px; }
-      .juegos .cartas-juegos .cartas:hover {
-        box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
-        transform: translateY(-1%); }
+  .juegos .cartas-juegos .cartas {
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    padding-bottom: 10px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #f0f8ff;
+    color: #06113C;
+    width: 8rem;
+    font-size: 1rem;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transition: all 400ms ease; }
+    .juegos .cartas-juegos .cartas:hover {
+      box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+      transform: translateY(-1%); }
+  .juegos .cartas-juegos .cartas .img-elden-ring {
+    padding: 10px 0px 25px 0px; }
+  .juegos .cartas-juegos .cartas .img-borderlands {
+    padding: 10px 0px 25px 0px; }
+  .juegos .cartas-juegos .cartas .img-gta {
+    padding: 15px 0px 25px 0px; }
+  .juegos .cartas-juegos .cartas .img-valhalla {
+    padding: 10px 0px 30px 0px; }
 
 .accesorios {
   background-color: #06113C;
   color: #f0f8ff;
   text-align: center; }
   .accesorios .titulo-accesorios {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 5px 0px;
+    text-align: center;
     background-color: #06113C;
     color: #fa8c1ffb; }
   .accesorios .cartas-accesorios {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around; }
-    .accesorios .cartas-accesorios .carta-accesorios {
-      align-self: center;
-      margin: 10px;
-      background-color: #f0f8ff;
-      color: #06113C;
-      border: 2px solid #f0f8ff;
-      border-radius: 8px;
-      box-shadow: 2px 2px 5px;
-      width: 8rem;
-      font-size: 1rem;
-      overflow: hidden;
-      border-radius: 6px;
-      box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
-      cursor: default;
-      transition: all 400ms ease; }
-      .accesorios .cartas-accesorios .carta-accesorios .jostick-ps5 {
-        margin: 0px 0px 18px 0px; }
-      .accesorios .cartas-accesorios .carta-accesorios .jostick-xbox {
-        margin: 5px 0px 12px 0px; }
-      .accesorios .cartas-accesorios .carta-accesorios:hover {
-        box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
-        transform: translateY(-1%); }
+  .accesorios .cartas-accesorios .carta-accesorios {
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    padding-bottom: 10px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #f0f8ff;
+    color: #06113C;
+    width: 8rem;
+    font-size: 1rem;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transition: all 400ms ease; }
+  .accesorios .cartas-accesorios .carta-accesorios .jostick-ps5 {
+    margin: 0px 0px 18px 0px; }
+  .accesorios .cartas-accesorios .carta-accesorios .jostick-xbox {
+    margin: 5px 0px 12px 0px; }
+  .accesorios .cartas-accesorios .carta-accesorios:hover {
+    box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+    transform: translateY(-1%); }
 
 .banner {
-  margin: 10px 0px; }
+  margin: 10px 0px;
+  padding-top: 60px; }
   .banner .img-consolas {
     width: 100%;
     max-width: 100%; }
@@ -186,7 +189,7 @@ body {
   padding-top: 10px; }
 
 .carrito .carrito-vacio {
-  padding-left: 20px; }
+  padding-left: 40px; }
 
 .carrito .añadir {
   text-align: center;
