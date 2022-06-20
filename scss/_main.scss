@@ -22,11 +22,11 @@
     justify-content: space-around;
 }
 
-@mixin titulos-productos {
+@mixin titulos-productos($bg1,$bg2){
     padding: 5px 0px;
     text-align: center;
-    background-color: $color2;
-    color: $color1;
+    background-color: $bg1;
+    color: $bg2;
 }
 
 .boton-comprar{
@@ -58,7 +58,7 @@
     color: $color3;
 
     .titulo-consola{
-        @include titulos-productos;
+        @include titulos-productos($color2,$color1);
     }
 
     .cartas-consolas{
@@ -81,8 +81,8 @@
     background-color: $color2;
     color: $color3;
 
-    .titulo-juegos{
-        @include titulos-productos;
+    .titulo-juegos{ 
+        @include titulos-productos($color2,$color1);
     }
 
     .cartas-juegos{
@@ -126,7 +126,7 @@
     text-align: center;
 
     .titulo-accesorios{
-        @include titulos-productos;
+        @include titulos-productos($color2,$color1);
     }
 
     .cartas-accesorios{
