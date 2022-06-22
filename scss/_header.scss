@@ -1,17 +1,18 @@
+/*vista celular*/
 .barra-nav{
     padding: 0;
     margin: 0;
+    line-height: 100%;
     
     .container-nav{
         background-color: $color1;
-        color: $color3;
+        color: $color1;
 
         .nombre-sitio{
             font-size: x-large;
             font-weight: 700;
             padding-left: 10px;
-            margin-bottom: 5px;
-            color: $color2;
+            color: $color3;
         }
 
         .navbar-toggler{
@@ -24,20 +25,23 @@
                 padding: 10px 0px;
                 
                 .nombres-secciones{
-                    color: $color2 ;
+                    color: $color3 ;
                     font-weight: 700;
+
                 }
             }
         }
     }
 }
+/*termina vista celular*/
 
+/*vista desktop*/
 @media screen and (min-width: 992px){
     .barra-nav{
         .container-nav{
             .nombre-sitio{
                 font-size: xx-large;
-                font-weight: 700;
+                font-weight: 800;
             }
 
             .secciones{
@@ -49,7 +53,7 @@
                     
                     .nombres-secciones{
                         &:hover{
-                            color: azure;
+                            color: $bg-boton;
                         }
                     }
                 }

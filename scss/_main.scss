@@ -5,8 +5,8 @@
         padding-bottom: 10px;
         margin: 10px;
         overflow: hidden;
-        background-color: $color3;
-        color: $color2;
+        background-color: $color1;
+        color: $color3;
         width: 8rem;
         font-size: 1rem;
         overflow: hidden;
@@ -27,22 +27,24 @@
     text-align: center;
     background-color: $bg1;
     color: $bg2;
+    font-family: 'Staatliches', cursive;
 }
 
+/*empieza vista celular*/
 .boton-comprar{
     margin-bottom: 4px;
     padding: 4px 8px;
     border: 0px;
     border-radius: 10px;
-    background-color: $color1;
-    border-color: $color1;
+    background-color: $bg-boton-hover;
+    color: $color1;
     &:hover{
-        background-color: $color1-2;
+        background-color: $bg-boton;
     }
 
     .boton-a{
         text-decoration: none;
-        color: $color2;
+        color: $color1;
     }
 }
 
@@ -51,11 +53,15 @@
     text-align: center;
 }
 
+.titulo-productos{
+    border-bottom: 1px solid #404a6c;
+}
+
 .consolas{
     margin-bottom: 8px;
     text-align: center;
     background-color: $color2;
-    color: $color3;
+    color: $color1;
 
     .titulo-consola{
         @include titulos-productos($color2,$color1);
@@ -79,7 +85,7 @@
     margin-bottom: 8px;
     text-align: center;
     background-color: $color2;
-    color: $color3;
+    color: $color1;
 
     .titulo-juegos{ 
         @include titulos-productos($color2,$color1);
@@ -122,7 +128,7 @@
 
 .accesorios{
     background-color: $color2;
-    color: $color3;
+    color: $color1;
     text-align: center;
 
     .titulo-accesorios{
@@ -180,7 +186,7 @@
         .boton-añadir{
             margin-top: 50px;
             margin-bottom: 20px;
-            background-color: $color3;
+            background-color: $color1;
             border-radius: 60px;
             padding: 5px;
             transition: all 400ms ease;
@@ -223,7 +229,9 @@
         margin-right: auto;
     }
 }
+/*termina vista celular*/
 
+/*empieza vista desktop*/
 @media screen and (min-width: 992px){
     .juegos{
         .cartas-juegos{

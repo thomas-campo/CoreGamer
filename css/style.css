@@ -5,75 +5,84 @@
 
 html, body {
   max-width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #2b2626; }
 
 body {
-  background-color: #06113C;
-  color: aliceblue; }
+  color: #f0f8ff;
+  font-family: 'Staatliches', cursive; }
 
+/*vista celular*/
 .barra-nav {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  line-height: 100%; }
   .barra-nav .container-nav {
-    background-color: #fa8c1ffb;
+    background-color: #f0f8ff;
     color: #f0f8ff; }
     .barra-nav .container-nav .nombre-sitio {
       font-size: x-large;
       font-weight: 700;
       padding-left: 10px;
-      margin-bottom: 5px;
-      color: #06113C; }
+      color: #0e0d0dea; }
     .barra-nav .container-nav .navbar-toggler {
       border: none; }
     .barra-nav .container-nav .secciones .lista-secciones {
       display: inline-block;
       padding: 10px 0px; }
       .barra-nav .container-nav .secciones .lista-secciones .nombres-secciones {
-        color: #06113C;
+        color: #0e0d0dea;
         font-weight: 700; }
 
+/*termina vista celular*/
+/*vista desktop*/
 @media screen and (min-width: 992px) {
   .barra-nav .container-nav .nombre-sitio {
     font-size: xx-large;
-    font-weight: 700; }
+    font-weight: 800; }
   .barra-nav .container-nav .secciones {
     display: flex;
     justify-content: end; }
     .barra-nav .container-nav .secciones .lista-secciones {
       padding-right: 20px; }
       .barra-nav .container-nav .secciones .lista-secciones .nombres-secciones:hover {
-        color: azure; }
+        color: #da291d; }
     .barra-nav .container-nav .secciones .nombres-secciones {
       font-size: large;
       font-weight: 700; } }
 
+/*empieza vista celular*/
 .boton-comprar {
   margin-bottom: 4px;
   padding: 4px 8px;
   border: 0px;
   border-radius: 10px;
-  background-color: #fa8c1ffb;
-  border-color: #fa8c1ffb; }
+  background-color: #0e0d0dea;
+  color: #f0f8ff; }
   .boton-comprar:hover {
-    background-color: #e9831efb; }
+    background-color: #da291d; }
   .boton-comprar .boton-a {
     text-decoration: none;
-    color: #06113C; }
+    color: #f0f8ff; }
 
 .productos {
   padding-top: 10px;
   text-align: center; }
 
+.titulo-productos {
+  border-bottom: 1px solid #404a6c; }
+
 .consolas {
   margin-bottom: 8px;
   text-align: center;
-  background-color: #06113C;
+  background-color: #2b2626;
   color: #f0f8ff; }
   .consolas .titulo-consola {
     padding: 5px 0px;
     text-align: center;
-    background-color: #06113C;
-    color: #fa8c1ffb; }
+    background-color: #2b2626;
+    color: #f0f8ff;
+    font-family: 'Staatliches', cursive; }
   .consolas .cartas-consolas {
     display: flex;
     flex-flow: row wrap;
@@ -86,7 +95,7 @@ body {
       margin: 10px;
       overflow: hidden;
       background-color: #f0f8ff;
-      color: #06113C;
+      color: #0e0d0dea;
       width: 8rem;
       font-size: 1rem;
       overflow: hidden;
@@ -101,13 +110,14 @@ body {
 .juegos {
   margin-bottom: 8px;
   text-align: center;
-  background-color: #06113C;
+  background-color: #2b2626;
   color: #f0f8ff; }
   .juegos .titulo-juegos {
     padding: 5px 0px;
     text-align: center;
-    background-color: #06113C;
-    color: #fa8c1ffb; }
+    background-color: #2b2626;
+    color: #f0f8ff;
+    font-family: 'Staatliches', cursive; }
   .juegos .cartas-juegos {
     display: flex;
     flex-flow: row wrap;
@@ -120,7 +130,7 @@ body {
     margin: 10px;
     overflow: hidden;
     background-color: #f0f8ff;
-    color: #06113C;
+    color: #0e0d0dea;
     width: 8rem;
     font-size: 1rem;
     overflow: hidden;
@@ -141,14 +151,15 @@ body {
     padding: 10px 0px 30px 0px; }
 
 .accesorios {
-  background-color: #06113C;
+  background-color: #2b2626;
   color: #f0f8ff;
   text-align: center; }
   .accesorios .titulo-accesorios {
     padding: 5px 0px;
     text-align: center;
-    background-color: #06113C;
-    color: #fa8c1ffb; }
+    background-color: #2b2626;
+    color: #f0f8ff;
+    font-family: 'Staatliches', cursive; }
   .accesorios .cartas-accesorios {
     display: flex;
     flex-flow: row wrap;
@@ -161,7 +172,7 @@ body {
     margin: 10px;
     overflow: hidden;
     background-color: #f0f8ff;
-    color: #06113C;
+    color: #0e0d0dea;
     width: 8rem;
     font-size: 1rem;
     overflow: hidden;
@@ -225,6 +236,8 @@ body {
     margin-left: auto;
     margin-right: auto; }
 
+/*termina vista celular*/
+/*empieza vista desktop*/
 @media screen and (min-width: 992px) {
   .juegos .cartas-juegos .cartas {
     width: 18rem; }
@@ -243,10 +256,11 @@ body {
     .accesorios .cartas-accesorios .carta-accesorios .jostick-xbox, .accesorios .cartas-accesorios .carta-accesorios .jostick-ps5 {
       margin: 0; } }
 
+/*empieza vista celular*/
 footer {
   padding: 0px 2%;
   text-align: center;
-  background-color: #06113C;
+  background-color: #2b2626;
   color: #f0f8ff; }
   footer .quienes-somos {
     text-align: center;
@@ -256,6 +270,8 @@ footer {
   footer .logo-redes {
     width: 3rem; }
 
+/*termina vista celular*/
+/*empieza vista desktop*/
 @media screen and (min-width: 992px) {
   footer .quienes-somos {
     margin-left: 0; } }

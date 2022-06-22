@@ -1,8 +1,9 @@
+/*empieza vista celular*/
 footer{
     padding: 0px 2%;
     text-align: center;
     background-color: $color2;
-    color: $color3;
+    color: $color1;
     
     .quienes-somos{
         text-align: center;
@@ -18,7 +19,9 @@ footer{
     }
     
 }
+/*termina vista celular*/
 
+/*empieza vista desktop*/
 @media screen and (min-width: 992px){
     footer{
         .quienes-somos{
