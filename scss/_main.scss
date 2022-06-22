@@ -172,16 +172,19 @@
 .carrito{
 
     .titulo-carrito{
-        text-align: center;
-        padding-top: 10px;
+        padding-left: 40px;
+        padding-top: 20px;
     }
 
     .carrito-vacio{
-        padding-left: 40px;
+        text-align: center;
+        padding-top: 20px;
+        font-size: x-large;
     }
 
     .añadir{
         text-align: center;
+        padding-bottom: 50px;
 
         .boton-añadir{
             margin-top: 50px;
@@ -189,12 +192,12 @@
             background-color: $color1;
             border-radius: 60px;
             padding: 5px;
-            transition: all 400ms ease;
+            transition: all 400ms ease-in-out;
         }
         
         /*hover del boton añadir*/
         .boton-añadir:hover{
-            transform: translateY(-4%);
+            transform: translateY(-10%);
         }
     }
 }

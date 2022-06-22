@@ -21,10 +21,14 @@ body {
     background-color: #f0f8ff;
     color: #f0f8ff; }
     .barra-nav .container-nav .nombre-sitio {
+      display: flex;
       font-size: x-large;
       font-weight: 700;
       padding-left: 10px;
-      color: #0e0d0dea; }
+      color: #0e0d0dea;
+      transform: translate(0, 8px); }
+      .barra-nav .container-nav .nombre-sitio .letra-nombre {
+        color: #da291d; }
     .barra-nav .container-nav .navbar-toggler {
       border: none; }
     .barra-nav .container-nav .secciones .lista-secciones {
@@ -196,14 +200,17 @@ body {
     max-width: 100%; }
 
 .carrito .titulo-carrito {
-  text-align: center;
-  padding-top: 10px; }
+  padding-left: 40px;
+  padding-top: 20px; }
 
 .carrito .carrito-vacio {
-  padding-left: 40px; }
+  text-align: center;
+  padding-top: 20px;
+  font-size: x-large; }
 
 .carrito .añadir {
   text-align: center;
+  padding-bottom: 50px;
   /*hover del boton añadir*/ }
   .carrito .añadir .boton-añadir {
     margin-top: 50px;
@@ -211,9 +218,9 @@ body {
     background-color: #f0f8ff;
     border-radius: 60px;
     padding: 5px;
-    transition: all 400ms ease; }
+    transition: all 400ms ease-in-out; }
   .carrito .añadir .boton-añadir:hover {
-    transform: translateY(-4%); }
+    transform: translateY(-10%); }
 
 .contactos .titulo-contacto {
   text-align: center;

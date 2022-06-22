@@ -9,10 +9,15 @@
         color: $color1;
 
         .nombre-sitio{
+            display: flex;
             font-size: x-large;
             font-weight: 700;
             padding-left: 10px;
             color: $color3;
+            transform: translate(0, 8px);
+            .letra-nombre{
+                color: $bg-boton;
+            }
         }
 
         .navbar-toggler{
@@ -27,7 +32,6 @@
                 .nombres-secciones{
                     color: $color3 ;
                     font-weight: 700;
-
                 }
             }
         }
