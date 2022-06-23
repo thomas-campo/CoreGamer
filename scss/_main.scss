@@ -48,6 +48,52 @@
     }
 }
 
+.flecha-icono{
+        transform: translate(0, -20px);
+        animation: bounce-in-top 2s 100ms infinite ;
+        img{
+            width: 10%;
+        }
+}
+
+
+@keyframes bounce-in-top {
+    0% {
+      transform: translateY(-30px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: translateY(-15px);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: translateY(-8px);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: translateY(-2px);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+  }
+
 .productos{
     padding-top: 10px;
     text-align: center;
