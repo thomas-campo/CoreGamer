@@ -49,10 +49,10 @@
 }
 
 .flecha-icono{
-        transform: translate(0, -20px);
         animation: bounce-in-top 2s 100ms infinite ;
+        padding: 25px 0px 20px 0px;
         img{
-            width: 10%;
+            width: 8%;
         }
 }
 
@@ -282,6 +282,12 @@
 
 /*empieza vista desktop*/
 @media screen and (min-width: 992px){
+    .flecha-icono{
+        img{
+            width: 2.5%;
+        }
+    }
+
     .juegos{
         .cartas-juegos{
             .cartas{
@@ -325,4 +331,4 @@
             }
         }
         }
-    }
+}

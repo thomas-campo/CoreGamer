@@ -70,10 +70,10 @@ body {
     color: #f0f8ff; }
 
 .flecha-icono {
-  transform: translate(0, -20px);
-  animation: bounce-in-top 2s 100ms infinite; }
+  animation: bounce-in-top 2s 100ms infinite;
+  padding: 25px 0px 20px 0px; }
   .flecha-icono img {
-    width: 10%; }
+    width: 8%; }
 
 @keyframes bounce-in-top {
   0% {
@@ -280,6 +280,8 @@ body {
 /*termina vista celular*/
 /*empieza vista desktop*/
 @media screen and (min-width: 992px) {
+  .flecha-icono img {
+    width: 2.5%; }
   .juegos .cartas-juegos .cartas {
     width: 18rem; }
     .juegos .cartas-juegos .cartas .img-elden-ring {
