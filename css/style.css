@@ -263,16 +263,22 @@ body {
 .contactos .informacion {
   padding-left: 20px; }
 
-.escribenos {
-  text-align: center; }
-  .escribenos .form {
+.mapa iframe {
+  width: 100%; }
+
+.registrate-escribinos .registrate {
+  text-align: center;
+  padding: 15px 0px; }
+  .registrate-escribinos .registrate .form {
     width: 228px;
     margin-left: auto;
     margin-right: auto; }
 
-.registrate {
-  text-align: center; }
-  .registrate .form {
+.registrate-escribinos .escribinos {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 0.5px solid white; }
+  .registrate-escribinos .escribinos .form {
     width: 228px;
     margin-left: auto;
     margin-right: auto; }
@@ -297,7 +303,16 @@ body {
   .accesorios .cartas-accesorios .carta-accesorios {
     width: 18rem; }
     .accesorios .cartas-accesorios .carta-accesorios .jostick-xbox, .accesorios .cartas-accesorios .carta-accesorios .jostick-ps5 {
-      margin: 0; } }
+      margin: 0; }
+  .informacion {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px; }
+  .registrate-escribinos {
+    display: flex;
+    justify-content: space-around; }
+    .registrate-escribinos .escribinos {
+      border: none; } }
 
 /*empieza vista celular*/
 footer {

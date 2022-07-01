@@ -259,25 +259,37 @@
     }
 }
 
-.escribenos{
-    text-align: center;
-
-    .form{
-        width: 228px;
-        margin-left: auto;
-        margin-right: auto;
+.mapa{
+    iframe{
+        width: 100%;
     }
 }
 
-.registrate{
-    text-align: center;
+.registrate-escribinos{
+    .registrate{
+        text-align: center;
+        padding: 15px 0px;
     
-    .form{
-        width: 228px;
-        margin-left: auto;
-        margin-right: auto;
+        .form{
+            width: 228px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .escribinos{
+        text-align: center;
+        padding-top: 15px;
+        border-top: 0.5px solid white;
+
+        .form{
+            width: 228px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
+
 /*termina vista celular*/
 
 /*empieza vista desktop*/
@@ -330,5 +342,20 @@
                 }
             }
         }
+    }
+
+    .informacion{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+
+    .registrate-escribinos{
+        display: flex;
+        justify-content: space-around;
+        
+        .escribinos{
+            border: none;
         }
+    }
 }
