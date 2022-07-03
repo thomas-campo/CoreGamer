@@ -70,7 +70,7 @@ body {
 
 .flecha-icono {
   animation: bounce-in-top 2s 100ms infinite;
-  padding: 25px 0px 20px 0px; }
+  padding: 30px 0px 10px 0px; }
   .flecha-icono img {
     width: 40px; }
 
@@ -266,41 +266,103 @@ body {
 
 .flex-contacto .escribinos {
   background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-  padding: 62px 0px; }
+  background-size: cover;
+  background-position: center;
+  padding: 124px 0px; }
   .flex-contacto .escribinos .caja-escribinos {
     width: 350px;
     margin-left: auto;
     margin-right: auto;
     padding: 25px 0px;
     text-align: center;
-    background-color: rgba(64, 74, 108, 0.384);
+    background-color: rgba(15, 17, 24, 0.459);
     border-radius: 10px; }
     .flex-contacto .escribinos .caja-escribinos .form {
       width: 300px;
       padding: 15px 0px 0px 0px;
       margin-left: auto;
       margin-right: auto; }
+      .flex-contacto .escribinos .caja-escribinos .form .boton-enviar {
+        width: 320px;
+        padding: 6.5px;
+        border: 1px;
+        border-radius: 8px;
+        background-color: #252525;
+        color: #f0f8ff; }
+        .flex-contacto .escribinos .caja-escribinos .form .boton-enviar:hover {
+          background-color: #313131;
+          color: rgba(240, 248, 255, 0.808); }
       .flex-contacto .escribinos .caja-escribinos .form .textarea {
         width: 300px;
         border-radius: 8px; }
 
 .fondo-carrito {
-  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed cover; }
+  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: center; }
 
 .fondo-registrate {
+  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: center;
-  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed cover; }
+  justify-content: center; }
   .fondo-registrate .registrate {
+    width: 350px;
     text-align: center;
-    padding: 30px 30px;
-    margin: 200px 0px;
-    background-color: rgba(24, 23, 31, 0.514);
-    border-radius: 8px; }
+    padding: 18px 30px 15px 30px;
+    margin: 150px 0px;
+    background-color: rgba(15, 17, 24, 0.459);
+    border-radius: 12px; }
+    .fondo-registrate .registrate h1 {
+      padding-bottom: 5px; }
     .fondo-registrate .registrate .form {
       width: 100%;
       margin-left: auto;
       margin-right: auto; }
+      .fondo-registrate .registrate .form .boton-enviar {
+        width: 290px;
+        padding: 6.5px;
+        border: 1px;
+        border-radius: 8px;
+        background-color: #252525;
+        color: #f0f8ff; }
+        .fondo-registrate .registrate .form .boton-enviar:hover {
+          background-color: #313131;
+          color: rgba(240, 248, 255, 0.808); }
+      .fondo-registrate .registrate .form .boton-iniciar1 {
+        width: 290px;
+        padding: 6.5px;
+        border: 1px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #da291d;
+        color: #f0f8ff; }
+        .fondo-registrate .registrate .form .boton-iniciar1 .img-logos {
+          width: 0.8em;
+          margin-right: 5px; }
+        .fondo-registrate .registrate .form .boton-iniciar1:hover {
+          background-color: #b1281f; }
+      .fondo-registrate .registrate .form .boton-iniciar2 {
+        width: 290px;
+        padding: 6.5px;
+        border: 1px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3b5998;
+        color: #f0f8ff; }
+        .fondo-registrate .registrate .form .boton-iniciar2 .img-logos {
+          width: 0.99em;
+          margin-right: 5px; }
+        .fondo-registrate .registrate .form .boton-iniciar2:hover {
+          background-color: rgba(47, 72, 124, 0.8); }
+      .fondo-registrate .registrate .form .iniciar-sesion {
+        text-decoration: none;
+        color: #f0f8ff; }
 
 /*termina vista celular*/
 /*empieza vista desktop*/
@@ -335,6 +397,7 @@ body {
         height: 100%; }
     .flex-contacto .escribinos {
       background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+      background-size: cover;
       text-align: center;
       flex-grow: 0.48; }
       .flex-contacto .escribinos .formulario {
@@ -343,8 +406,14 @@ body {
           width: 228px;
           margin-left: auto;
           margin-right: auto; }
-  .registrate {
-    margin: 200px 0px; } }
+  .fondo-registrate .registrate {
+    width: 380px; }
+    .fondo-registrate .registrate .form .boton-enviar {
+      width: 320px; }
+    .fondo-registrate .registrate .form .boton-iniciar1 {
+      width: 320px; }
+    .fondo-registrate .registrate .form .boton-iniciar2 {
+      width: 320px; } }
 
 /*empieza vista celular*/
 footer {

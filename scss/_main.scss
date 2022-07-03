@@ -30,6 +30,16 @@
     font-family: 'Staatliches', cursive;
 }
 
+@mixin botones-sumbit {
+    width: 290px;
+    padding: 6.5px;
+    border: 1px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*empieza vista celular*/
 .boton-comprar{
     margin-bottom: 4px;
@@ -50,7 +60,7 @@
 
 .flecha-icono{
         animation: bounce-in-top 2s 100ms infinite ;
-        padding: 25px 0px 20px 0px;
+        padding: 30px 0px 10px 0px;
         img{
             width: 40px;
         }
@@ -266,7 +276,9 @@
     
     .escribinos{
         background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-        padding: 62px 0px;
+        background-size: cover;
+        background-position: center;
+        padding: 124px 0px;
         
         .caja-escribinos{
             width: 350px;
@@ -274,7 +286,7 @@
             margin-right: auto;
             padding: 25px 0px;
             text-align: center;
-            background-color: rgba(64, 74, 108, 0.384);
+            background-color: rgba(15, 17, 24, 0.459);
             border-radius: 10px;
             
             .form{
@@ -282,6 +294,18 @@
                 padding: 15px 0px 0px 0px;
                 margin-left: auto;
                 margin-right: auto;
+                .boton-enviar{
+                    width: 320px;
+                    padding: 6.5px;
+                    border: 1px;
+                    border-radius: 8px;
+                    background-color: rgb(37, 37, 37);
+                    color: $color1;
+                    &:hover{
+                        background-color: rgb(49, 49, 49);
+                        color: rgba(240, 248, 255, 0.808);
+                    }
+                }
                 .textarea{
                     width: 300px;
                     border-radius: 8px;
@@ -292,24 +316,71 @@
 }
 
 .fondo-carrito{
-    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed cover;
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 .fondo-registrate{
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
-    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed cover;
     .registrate{
+        width: 350px;
         text-align: center;
-        padding: 30px 30px;
-        margin: 200px 0px;
-        background-color: rgba(24, 23, 31, 0.514);
-        border-radius: 8px;
-    
+        padding: 18px 30px 15px 30px;
+        margin: 150px 0px;
+        background-color: rgba(15, 17, 24, 0.459);
+        border-radius: 12px;
+        h1{
+            padding-bottom: 5px;
+        }
         .form{
             width: 100%;
             margin-left: auto;
             margin-right: auto;
+            .boton-enviar{
+                width: 290px;
+                padding: 6.5px;
+                border: 1px;
+                border-radius: 8px;
+                background-color: rgb(37, 37, 37);
+                color: $color1;
+                &:hover{
+                    background-color: rgb(49, 49, 49);
+                    color: rgba(240, 248, 255, 0.808);
+                }
+            }
+            .boton-iniciar1{
+                @include botones-sumbit;
+                background-color: $bg-boton;
+                color: $color1;
+                .img-logos{
+                    width: 0.8em;
+                    margin-right: 5px;
+                }
+                &:hover{
+                    background-color: rgb(177, 40, 31);
+                }
+            }
+            .boton-iniciar2{
+                @include botones-sumbit;
+                background-color: #3b5998;
+                color: $color1;
+                .img-logos{
+                    width: 0.99em;
+                    margin-right: 5px;
+                }
+                &:hover{
+                    background-color: rgba(47, 72, 124, 0.8)
+                }
+            }
+            .iniciar-sesion{
+                text-decoration: none;
+                color: $color1;
+            }
         }
     }
 }
@@ -384,6 +455,7 @@
     
         .escribinos{
             background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+            background-size: cover;
             text-align: center;
             flex-grow: 0.48;
             
@@ -398,9 +470,20 @@
         }   
     }
 
-    
-
-    .registrate{
-        margin: 200px 0px;
+    .fondo-registrate{
+        .registrate{
+            width: 380px;
+            .form{
+                .boton-enviar{
+                    width: 320px;
+                }
+                .boton-iniciar1{
+                    width: 320px;
+                }
+                .boton-iniciar2{
+                    width: 320px;
+                }
+            }
+        }
     }
 }
