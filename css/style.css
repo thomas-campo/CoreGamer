@@ -25,7 +25,7 @@ body {
       font-size: x-large;
       font-weight: 700;
       padding-left: 10px;
-      color: #0e0d0dea;
+      color: #161515ea;
       transform: translate(0, 8px); }
       .barra-nav .container-nav .nombre-sitio .letra-nombre {
         color: #da291d; }
@@ -35,7 +35,7 @@ body {
       display: inline-block;
       padding: 10px 0px; }
       .barra-nav .container-nav .secciones .lista-secciones .nombres-secciones {
-        color: #0e0d0dea;
+        color: #161515ea;
         font-weight: 700; }
 
 /*termina vista celular*/
@@ -133,7 +133,7 @@ body {
       margin: 10px;
       overflow: hidden;
       background-color: #f0f8ff;
-      color: #0e0d0dea;
+      color: #161515ea;
       width: 8rem;
       font-size: 1rem;
       overflow: hidden;
@@ -168,7 +168,7 @@ body {
     margin: 10px;
     overflow: hidden;
     background-color: #f0f8ff;
-    color: #0e0d0dea;
+    color: #161515ea;
     width: 8rem;
     font-size: 1rem;
     overflow: hidden;
@@ -210,7 +210,7 @@ body {
     margin: 10px;
     overflow: hidden;
     background-color: #f0f8ff;
-    color: #0e0d0dea;
+    color: #161515ea;
     width: 8rem;
     font-size: 1rem;
     overflow: hidden;
@@ -234,21 +234,19 @@ body {
     max-width: 100%; }
 
 .carrito .titulo-carrito {
-  padding-left: 40px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  text-align: center; }
 
 .carrito .carrito-vacio {
-  text-align: center;
   padding-top: 20px;
-  font-size: x-large; }
+  text-align: center; }
 
 .carrito .añadir {
   text-align: center;
-  padding-bottom: 50px;
+  padding: 230px 0px;
   /*hover del boton añadir*/ }
   .carrito .añadir .boton-añadir {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin: 20px 0px;
     background-color: #f0f8ff;
     border-radius: 60px;
     padding: 5px;
@@ -263,25 +261,30 @@ body {
 .contactos .informacion {
   padding-left: 20px; }
 
+.escribinos {
+  text-align: center;
+  padding-top: 15px; }
+  .escribinos .form {
+    width: 228px;
+    margin-left: auto;
+    margin-right: auto; }
+
 .mapa iframe {
   width: 100%; }
 
-.registrate-escribinos .registrate {
-  text-align: center;
-  padding: 15px 0px; }
-  .registrate-escribinos .registrate .form {
-    width: 228px;
-    margin-left: auto;
-    margin-right: auto; }
-
-.registrate-escribinos .escribinos {
-  text-align: center;
-  padding-top: 15px;
-  border-top: 0.5px solid white; }
-  .registrate-escribinos .escribinos .form {
-    width: 228px;
-    margin-left: auto;
-    margin-right: auto; }
+.fondo-imagen {
+  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+  background-size: cover; }
+  .fondo-imagen .registrate {
+    text-align: center;
+    padding: 30px 30px;
+    margin: 200px 0px;
+    background-color: rgba(24, 23, 31, 0.514);
+    border-radius: 8px; }
+    .fondo-imagen .registrate .form {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
 
 /*termina vista celular*/
 /*empieza vista desktop*/
@@ -307,18 +310,13 @@ body {
   .informacion {
     display: flex;
     justify-content: space-around;
-    padding-top: 10px; }
-  .registrate-escribinos {
-    display: flex;
-    justify-content: space-around; }
-    .registrate-escribinos .escribinos {
-      border: none; } }
+    padding-top: 10px; } }
 
 /*empieza vista celular*/
 footer {
   padding: 0px 2%;
   text-align: center;
-  background-color: #2b2626;
+  background-color: #161515ea;
   color: #f0f8ff; }
   footer .quienes-somos {
     text-align: center;

@@ -22,7 +22,7 @@
     justify-content: space-around;
 }
 
-@mixin titulos-productos($bg1,$bg2){
+@mixin titulos($bg1,$bg2){
     padding: 5px 0px;
     text-align: center;
     background-color: $bg1;
@@ -110,7 +110,7 @@
     color: $color1;
 
     .titulo-consola{
-        @include titulos-productos($color2,$color1);
+        @include titulos($color2,$color1);
     }
 
     .cartas-consolas{
@@ -134,7 +134,7 @@
     color: $color1;
 
     .titulo-juegos{ 
-        @include titulos-productos($color2,$color1);
+        @include titulos($color2,$color1);
     }
 
     .cartas-juegos{
@@ -178,7 +178,7 @@
     text-align: center;
 
     .titulo-accesorios{
-        @include titulos-productos($color2,$color1);
+        @include titulos($color2,$color1);
     }
 
     .cartas-accesorios{
@@ -216,25 +216,22 @@
 }
 
 .carrito{
-
     .titulo-carrito{
-        padding-left: 40px;
         padding-top: 20px;
-    }
-
-    .carrito-vacio{
         text-align: center;
+    }
+    
+    .carrito-vacio{
         padding-top: 20px;
-        font-size: x-large;
+        text-align: center;
     }
 
     .añadir{
         text-align: center;
-        padding-bottom: 50px;
+        padding: 230px 0px;
 
         .boton-añadir{
-            margin-top: 50px;
-            margin-bottom: 20px;
+            margin: 20px 0px;
             background-color: $color1;
             border-radius: 60px;
             padding: 5px;
@@ -259,31 +256,36 @@
     }
 }
 
+.escribinos{
+    text-align: center;
+    padding-top: 15px;
+
+    .form{
+        width: 228px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .mapa{
     iframe{
         width: 100%;
     }
 }
 
-.registrate-escribinos{
+.fondo-imagen{
+
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+    background-size: cover;
     .registrate{
         text-align: center;
-        padding: 15px 0px;
+        padding: 30px 30px;
+        margin: 200px 0px;
+        background-color: rgba(24, 23, 31, 0.514);
+        border-radius: 8px;
     
         .form{
-            width: 228px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-    .escribinos{
-        text-align: center;
-        padding-top: 15px;
-        border-top: 0.5px solid white;
-
-        .form{
-            width: 228px;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -350,12 +352,4 @@
         padding-top: 10px;
     }
 
-    .registrate-escribinos{
-        display: flex;
-        justify-content: space-around;
-        
-        .escribinos{
-            border: none;
-        }
-    }
 }

@@ -13,6 +13,7 @@
             font-size: x-large;
             font-weight: 700;
             padding-left: 10px;
+
             color: $color3;
             transform: translate(0, 8px);
             .letra-nombre{
@@ -28,7 +29,6 @@
             .lista-secciones{
                 display: inline-block;
                 padding: 10px 0px;
-                
                 .nombres-secciones{
                     color: $color3 ;
                     font-weight: 700;
