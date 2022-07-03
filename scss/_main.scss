@@ -260,21 +260,30 @@
     .mapa{
         iframe{
             width: 100%;
-            height: 100%;
+            height: 544px;
         }
     }
     
     .escribinos{
         background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-        text-align: center;
-        .formulario{
-            background-color: rgb(64, 74, 108);
+        padding: 62px 0px;
+        
+        .caja-escribinos{
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 25px 0px;
+            text-align: center;
+            background-color: rgba(64, 74, 108, 0.384);
+            border-radius: 10px;
+            
             .form{
-                width: 228px;
+                width: 300px;
+                padding: 15px 0px 0px 0px;
                 margin-left: auto;
                 margin-right: auto;
                 .textarea{
-                    width: 228px;
+                    width: 300px;
                     border-radius: 8px;
                 }
             }
@@ -283,15 +292,13 @@
 }
 
 .fondo-carrito{
-    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-    background-size: cover;
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed cover;
 }
 
 .fondo-registrate{
     display: flex;
     justify-content: center;
-    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-    background-size: cover;
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed cover;
     .registrate{
         text-align: center;
         padding: 30px 30px;
@@ -306,7 +313,6 @@
         }
     }
 }
-
 /*termina vista celular*/
 
 /*empieza vista desktop*/
@@ -370,13 +376,16 @@
     .flex-contacto{
         display: flex;
         .mapa{
-            flex-grow: 0.45;
+            flex-grow: 0.52;
+            iframe{
+                height: 100%;
+            }
         }
     
         .escribinos{
             background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
             text-align: center;
-            flex-grow: 0.55;
+            flex-grow: 0.48;
             
             .formulario{
                 background-color: #404a6ccc;

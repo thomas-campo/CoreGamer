@@ -2,25 +2,24 @@
 .barra-nav{
     padding: 0;
     margin: 0;
-    line-height: 100%;
     
     .container-nav{
         background-color: $color1;
         color: $color1;
-
+        
         .nombre-sitio{
             display: flex;
             font-size: x-large;
             font-weight: 700;
             padding-left: 10px;
-
+            
             color: $color3;
             transform: translate(0, 8px);
             .letra-nombre{
                 color: $bg-boton;
             }
         }
-
+        
         .navbar-toggler{
             border: none;
         }
