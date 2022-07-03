@@ -228,7 +228,7 @@
 
     .añadir{
         text-align: center;
-        padding: 240px 0px;
+        padding: 230px 0px;
 
         .boton-añadir{
             margin: 20px 0px;
@@ -248,7 +248,7 @@
 .contactos{
     .titulo-contacto{
         text-align: center;
-        margin: 10px 0px;
+        margin: 20px 0px 10px 0px;
     }
 
     .informacion{
@@ -256,27 +256,36 @@
     }
 }
 
-.escribinos{
-    text-align: center;
-    padding-top: 15px;
-
-    .form{
-        width: 228px;
-        margin-left: auto;
-        margin-right: auto;
+.flex-contacto{
+    .mapa{
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
     }
-}
-
-.mapa{
-    iframe{
-        width: 100%;
+    
+    .escribinos{
+        background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+        text-align: center;
+        .formulario{
+            background-color: rgb(64, 74, 108);
+            .form{
+                width: 228px;
+                margin-left: auto;
+                margin-right: auto;
+                .textarea{
+                    width: 228px;
+                    border-radius: 8px;
+                }
+            }
+        }
     }
 }
 
 .fondo-carrito{
     background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
     background-size: cover;
-    }
+}
 
 .fondo-registrate{
     display: flex;
@@ -357,6 +366,30 @@
         justify-content: space-around;
         padding-top: 10px;
     }
+
+    .flex-contacto{
+        display: flex;
+        .mapa{
+            flex-grow: 0.45;
+        }
+    
+        .escribinos{
+            background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+            text-align: center;
+            flex-grow: 0.55;
+            
+            .formulario{
+                background-color: #404a6ccc;
+                .form{
+                    width: 228px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }   
+    }
+
+    
 
     .registrate{
         margin: 200px 0px;
