@@ -110,7 +110,7 @@ body {
   border-bottom: 1px solid #404a6c; }
 
 .consolas {
-  margin-bottom: 8px;
+  margin: 18px 0px 0px 0px;
   text-align: center;
   background-color: #2b2626;
   color: #f0f8ff; }
@@ -421,9 +421,8 @@ footer {
   text-align: center;
   background-color: #161515ea;
   color: #f0f8ff; }
-  footer .quienes-somos {
-    text-align: center;
-    margin-left: 15%; }
+  footer .navegacion {
+    text-align: center; }
   footer .logo-metodo-pago {
     width: 4rem; }
   footer .logo-redes {
