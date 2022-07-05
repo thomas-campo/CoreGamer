@@ -361,6 +361,8 @@ body {
       .fondo-registrate .registrate .form .iniciar-sesion {
         text-decoration: none;
         color: #f0f8ff; }
+        .fondo-registrate .registrate .form .iniciar-sesion:hover {
+          color: rgba(240, 248, 255, 0.6); }
 
 /*termina vista celular*/
 /*empieza vista desktop*/
