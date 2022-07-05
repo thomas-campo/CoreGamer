@@ -5,8 +5,7 @@
 
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
-  background-color: #2b2626; }
+  overflow-x: hidden; }
 
 body {
   color: #f0f8ff;
@@ -234,7 +233,8 @@ body {
 
 .fondo-carrito {
   background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .carrito .titulo-carrito {
   padding-top: 20px;
@@ -270,7 +270,6 @@ body {
 
 .flex-contacto .escribinos {
   background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-  background-size: cover;
   background-position: center;
   padding: 124px 0px; }
   .flex-contacto .escribinos .caja-escribinos {
