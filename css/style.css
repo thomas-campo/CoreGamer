@@ -302,67 +302,68 @@ body {
 .fondo-registrate {
   background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
   background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center; }
-  .fondo-registrate .registrate {
-    width: 300px;
-    text-align: center;
-    padding: 18px 30px 15px 30px;
-    margin: 54px 0px;
-    background-color: rgba(15, 17, 24, 0.459);
-    border-radius: 12px; }
-    .fondo-registrate .registrate h1 {
-      padding-bottom: 5px; }
-    .fondo-registrate .registrate .form {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto; }
-      .fondo-registrate .registrate .form .boton-enviar {
-        width: 240px;
-        padding: 6.5px;
-        border: 1px;
-        border-radius: 8px;
-        background-color: #252525;
-        color: #f0f8ff; }
-        .fondo-registrate .registrate .form .boton-enviar:hover {
-          background-color: #313131;
-          color: rgba(240, 248, 255, 0.808); }
-      .fondo-registrate .registrate .form .boton-iniciar1 {
-        width: 240px;
-        padding: 6.5px;
-        border: 1px;
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #da291d;
-        color: #f0f8ff; }
-        .fondo-registrate .registrate .form .boton-iniciar1 .img-logos {
-          width: 0.8em;
-          margin-right: 5px; }
-        .fondo-registrate .registrate .form .boton-iniciar1:hover {
-          background-color: #b1281f; }
-      .fondo-registrate .registrate .form .boton-iniciar2 {
-        width: 240px;
-        padding: 6.5px;
-        border: 1px;
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #3b5998;
-        color: #f0f8ff; }
-        .fondo-registrate .registrate .form .boton-iniciar2 .img-logos {
-          width: 0.99em;
-          margin-right: 5px; }
-        .fondo-registrate .registrate .form .boton-iniciar2:hover {
-          background-color: rgba(47, 72, 124, 0.8); }
-      .fondo-registrate .registrate .form .iniciar-sesion {
-        text-decoration: none;
-        color: #f0f8ff; }
-        .fondo-registrate .registrate .form .iniciar-sesion:hover {
-          color: rgba(240, 248, 255, 0.6); }
+  background-position: center; }
+  .fondo-registrate .caja-registrate {
+    display: flex;
+    justify-content: center; }
+    .fondo-registrate .caja-registrate .registrate {
+      width: 300px;
+      text-align: center;
+      padding: 18px 30px 15px 30px;
+      margin: 54px 0px;
+      background-color: rgba(15, 17, 24, 0.459);
+      border-radius: 12px; }
+      .fondo-registrate .caja-registrate .registrate h1 {
+        padding-bottom: 5px; }
+      .fondo-registrate .caja-registrate .registrate .form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto; }
+        .fondo-registrate .caja-registrate .registrate .form .boton-enviar {
+          width: 240px;
+          padding: 6.5px;
+          border: 1px;
+          border-radius: 8px;
+          background-color: #252525;
+          color: #f0f8ff; }
+          .fondo-registrate .caja-registrate .registrate .form .boton-enviar:hover {
+            background-color: #313131;
+            color: rgba(240, 248, 255, 0.808); }
+        .fondo-registrate .caja-registrate .registrate .form .boton-iniciar1 {
+          width: 240px;
+          padding: 6.5px;
+          border: 1px;
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #da291d;
+          color: #f0f8ff; }
+          .fondo-registrate .caja-registrate .registrate .form .boton-iniciar1 .img-logos {
+            width: 0.8em;
+            margin-right: 5px; }
+          .fondo-registrate .caja-registrate .registrate .form .boton-iniciar1:hover {
+            background-color: #b1281f; }
+        .fondo-registrate .caja-registrate .registrate .form .boton-iniciar2 {
+          width: 240px;
+          padding: 6.5px;
+          border: 1px;
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #3b5998;
+          color: #f0f8ff; }
+          .fondo-registrate .caja-registrate .registrate .form .boton-iniciar2 .img-logos {
+            width: 0.99em;
+            margin-right: 5px; }
+          .fondo-registrate .caja-registrate .registrate .form .boton-iniciar2:hover {
+            background-color: rgba(47, 72, 124, 0.8); }
+        .fondo-registrate .caja-registrate .registrate .form .iniciar-sesion {
+          text-decoration: none;
+          color: #f0f8ff; }
+          .fondo-registrate .caja-registrate .registrate .form .iniciar-sesion:hover {
+            color: rgba(240, 248, 255, 0.6); }
 
 /*termina vista celular*/
 /*empieza vista desktop*/
@@ -411,14 +412,14 @@ body {
           width: 228px;
           margin-left: auto;
           margin-right: auto; }
-  .fondo-registrate .registrate {
+  .fondo-registrate .caja-registrate .registrate {
     width: 380px;
     margin: 150px 0px; }
-    .fondo-registrate .registrate .form .boton-enviar {
+    .fondo-registrate .caja-registrate .registrate .form .boton-enviar {
       width: 320px; }
-    .fondo-registrate .registrate .form .boton-iniciar1 {
+    .fondo-registrate .caja-registrate .registrate .form .boton-iniciar1 {
       width: 320px; }
-    .fondo-registrate .registrate .form .boton-iniciar2 {
+    .fondo-registrate .caja-registrate .registrate .form .boton-iniciar2 {
       width: 320px; } }
 
 /*empieza vista celular*/

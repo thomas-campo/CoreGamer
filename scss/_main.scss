@@ -324,63 +324,65 @@
     background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    .registrate{
-        width: 300px;
-        text-align: center;
-        padding: 18px 30px 15px 30px;
-        margin: 54px 0px;
-        background-color: rgba(15, 17, 24, 0.459);
-        border-radius: 12px;
-        h1{
-            padding-bottom: 5px;
-        }
-        .form{
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            .boton-enviar{
-                width: 240px;
-                padding: 6.5px;
-                border: 1px;
-                border-radius: 8px;
-                background-color: rgb(37, 37, 37);
-                color: $color1;
-                &:hover{
-                    background-color: rgb(49, 49, 49);
-                    color: rgba(240, 248, 255, 0.808);
-                }
+    .caja-registrate{
+        display: flex;
+        justify-content: center;
+        .registrate{
+            width: 300px;
+            text-align: center;
+            padding: 18px 30px 15px 30px;
+            margin: 54px 0px;
+            background-color: rgba(15, 17, 24, 0.459);
+            border-radius: 12px;
+            h1{
+                padding-bottom: 5px;
             }
-            .boton-iniciar1{
-                @include botones-sumbit;
-                background-color: $bg-boton;
-                color: $color1;
-                .img-logos{
-                    width: 0.8em;
-                    margin-right: 5px;
+            .form{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                .boton-enviar{
+                    width: 240px;
+                    padding: 6.5px;
+                    border: 1px;
+                    border-radius: 8px;
+                    background-color: rgb(37, 37, 37);
+                    color: $color1;
+                    &:hover{
+                        background-color: rgb(49, 49, 49);
+                        color: rgba(240, 248, 255, 0.808);
+                    }
                 }
-                &:hover{
-                    background-color: rgb(177, 40, 31);
+                .boton-iniciar1{
+                    @include botones-sumbit;
+                    background-color: $bg-boton;
+                    color: $color1;
+                    .img-logos{
+                        width: 0.8em;
+                        margin-right: 5px;
+                    }
+                    &:hover{
+                        background-color: rgb(177, 40, 31);
+                    }
                 }
-            }
-            .boton-iniciar2{
-                @include botones-sumbit;
-                background-color: #3b5998;
-                color: $color1;
-                .img-logos{
-                    width: 0.99em;
-                    margin-right: 5px;
+                .boton-iniciar2{
+                    @include botones-sumbit;
+                    background-color: #3b5998;
+                    color: $color1;
+                    .img-logos{
+                        width: 0.99em;
+                        margin-right: 5px;
+                    }
+                    &:hover{
+                        background-color: rgba(47, 72, 124, 0.8)
+                    }
                 }
-                &:hover{
-                    background-color: rgba(47, 72, 124, 0.8)
-                }
-            }
-            .iniciar-sesion{
-                text-decoration: none;
-                color: $color1;
-                &:hover{
-                    color: rgba(240, 248, 255, 0.6);
+                .iniciar-sesion{
+                    text-decoration: none;
+                    color: $color1;
+                    &:hover{
+                        color: rgba(240, 248, 255, 0.6);
+                    }
                 }
             }
         }
@@ -484,18 +486,20 @@
     }
 
     .fondo-registrate{
-        .registrate{
-            width: 380px;
-            margin: 150px 0px;
-            .form{
-                .boton-enviar{
-                    width: 320px;
-                }
-                .boton-iniciar1{
-                    width: 320px;
-                }
-                .boton-iniciar2{
-                    width: 320px;
+        .caja-registrate{
+            .registrate{
+                width: 380px;
+                margin: 150px 0px;
+                .form{
+                    .boton-enviar{
+                        width: 320px;
+                    }
+                    .boton-iniciar1{
+                        width: 320px;
+                    }
+                    .boton-iniciar2{
+                        width: 320px;
+                    }
                 }
             }
         }
