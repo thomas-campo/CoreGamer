@@ -105,11 +105,11 @@
   }
 
 .productos{
-    padding-top: 10px;
     text-align: center;
 }
 
 .titulo-productos{
+    padding: 20px 0px 10px 0px;
     border-bottom: 1px solid #404a6c;
 }
 
@@ -226,7 +226,7 @@
 }
 
 .fondo-carrito{
-    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed -1000px -350px;
     background-size: cover;
 }
 
@@ -438,6 +438,11 @@
                 }
             }
         }
+    }
+
+    .fondo-carrito{
+        background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed 0px -50px;
+        background-size: cover;
     }
 
     .carrito{

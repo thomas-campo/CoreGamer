@@ -103,10 +103,10 @@ body {
     animation-timing-function: ease-out; } }
 
 .productos {
-  padding-top: 10px;
   text-align: center; }
 
 .titulo-productos {
+  padding: 20px 0px 10px 0px;
   border-bottom: 1px solid #404a6c; }
 
 .consolas {
@@ -233,7 +233,7 @@ body {
     max-width: 100%; }
 
 .fondo-carrito {
-  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed -1000px -350px;
   background-size: cover; }
 
 .carrito .titulo-carrito {
@@ -385,6 +385,9 @@ body {
     width: 18rem; }
     .accesorios .cartas-accesorios .carta-accesorios .jostick-xbox, .accesorios .cartas-accesorios .carta-accesorios .jostick-ps5 {
       margin: 0; }
+  .fondo-carrito {
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed 0px -50px;
+    background-size: cover; }
   .carrito .añadir {
     padding: 230px 0px; }
   .informacion {
