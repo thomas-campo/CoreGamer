@@ -31,7 +31,7 @@
 }
 
 @mixin botones-sumbit {
-    width: 290px;
+    width: 240px;
     padding: 6.5px;
     border: 1px;
     border-radius: 8px;
@@ -225,6 +225,11 @@
     }
 }
 
+.fondo-carrito{
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
 .carrito{
     .titulo-carrito{
         padding-top: 20px;
@@ -238,7 +243,7 @@
 
     .añadir{
         text-align: center;
-        padding: 230px 0px;
+        padding: 165px 0px;
 
         .boton-añadir{
             margin: 20px 0px;
@@ -262,7 +267,7 @@
     }
 
     .informacion{
-        padding-left: 20px;
+        text-align: center;
     }
 }
 
@@ -277,7 +282,6 @@
     .escribinos{
         background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
         background-size: cover;
-        background-position: center;
         padding: 124px 0px;
         
         .caja-escribinos{
@@ -315,11 +319,6 @@
     }
 }
 
-.fondo-carrito{
-    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-    background-size: cover;
-    background-position: center;
-}
 
 .fondo-registrate{
     background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
@@ -328,10 +327,10 @@
     display: flex;
     justify-content: center;
     .registrate{
-        width: 350px;
+        width: 300px;
         text-align: center;
         padding: 18px 30px 15px 30px;
-        margin: 150px 0px;
+        margin: 54px 0px;
         background-color: rgba(15, 17, 24, 0.459);
         border-radius: 12px;
         h1{
@@ -342,7 +341,7 @@
             margin-left: auto;
             margin-right: auto;
             .boton-enviar{
-                width: 290px;
+                width: 240px;
                 padding: 6.5px;
                 border: 1px;
                 border-radius: 8px;
@@ -438,6 +437,12 @@
         }
     }
 
+    .carrito{
+        .añadir{
+            padding: 230px 0px;
+        }
+    }
+
     .informacion{
         display: flex;
         justify-content: space-around;
@@ -473,6 +478,7 @@
     .fondo-registrate{
         .registrate{
             width: 380px;
+            margin: 150px 0px;
             .form{
                 .boton-enviar{
                     width: 320px;

@@ -232,6 +232,10 @@ body {
     width: 100%;
     max-width: 100%; }
 
+.fondo-carrito {
+  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+  background-size: cover; }
+
 .carrito .titulo-carrito {
   padding-top: 20px;
   text-align: center; }
@@ -242,7 +246,7 @@ body {
 
 .carrito .añadir {
   text-align: center;
-  padding: 230px 0px;
+  padding: 165px 0px;
   /*hover del boton añadir*/ }
   .carrito .añadir .boton-añadir {
     margin: 20px 0px;
@@ -258,7 +262,7 @@ body {
   margin: 20px 0px 10px 0px; }
 
 .contactos .informacion {
-  padding-left: 20px; }
+  text-align: center; }
 
 .flex-contacto .mapa iframe {
   width: 100%;
@@ -267,7 +271,6 @@ body {
 .flex-contacto .escribinos {
   background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
   background-size: cover;
-  background-position: center;
   padding: 124px 0px; }
   .flex-contacto .escribinos .caja-escribinos {
     width: 350px;
@@ -296,11 +299,6 @@ body {
         width: 300px;
         border-radius: 8px; }
 
-.fondo-carrito {
-  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-  background-size: cover;
-  background-position: center; }
-
 .fondo-registrate {
   background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
   background-size: cover;
@@ -308,10 +306,10 @@ body {
   display: flex;
   justify-content: center; }
   .fondo-registrate .registrate {
-    width: 350px;
+    width: 300px;
     text-align: center;
     padding: 18px 30px 15px 30px;
-    margin: 150px 0px;
+    margin: 54px 0px;
     background-color: rgba(15, 17, 24, 0.459);
     border-radius: 12px; }
     .fondo-registrate .registrate h1 {
@@ -321,7 +319,7 @@ body {
       margin-left: auto;
       margin-right: auto; }
       .fondo-registrate .registrate .form .boton-enviar {
-        width: 290px;
+        width: 240px;
         padding: 6.5px;
         border: 1px;
         border-radius: 8px;
@@ -331,7 +329,7 @@ body {
           background-color: #313131;
           color: rgba(240, 248, 255, 0.808); }
       .fondo-registrate .registrate .form .boton-iniciar1 {
-        width: 290px;
+        width: 240px;
         padding: 6.5px;
         border: 1px;
         border-radius: 8px;
@@ -346,7 +344,7 @@ body {
         .fondo-registrate .registrate .form .boton-iniciar1:hover {
           background-color: #b1281f; }
       .fondo-registrate .registrate .form .boton-iniciar2 {
-        width: 290px;
+        width: 240px;
         padding: 6.5px;
         border: 1px;
         border-radius: 8px;
@@ -385,6 +383,8 @@ body {
     width: 18rem; }
     .accesorios .cartas-accesorios .carta-accesorios .jostick-xbox, .accesorios .cartas-accesorios .carta-accesorios .jostick-ps5 {
       margin: 0; }
+  .carrito .añadir {
+    padding: 230px 0px; }
   .informacion {
     display: flex;
     justify-content: space-around;
@@ -407,7 +407,8 @@ body {
           margin-left: auto;
           margin-right: auto; }
   .fondo-registrate .registrate {
-    width: 380px; }
+    width: 380px;
+    margin: 150px 0px; }
     .fondo-registrate .registrate .form .boton-enviar {
       width: 320px; }
     .fondo-registrate .registrate .form .boton-iniciar1 {
