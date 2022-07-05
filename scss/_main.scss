@@ -281,7 +281,8 @@
     
     .escribinos{
         background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-        background-size: auto 1440px;
+        background-size: cover;
+        background-position: center;
         padding: 124px 0px;
         
         .caja-escribinos{
