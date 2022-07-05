@@ -226,7 +226,7 @@
 }
 
 .fondo-carrito{
-    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed -1000px -350px;
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
     background-size: cover;
 }
 
@@ -280,7 +280,8 @@
     }
     
     .escribinos{
-        background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+        background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat;
+        background-attachment: scroll;
         background-size: cover;
         padding: 124px 0px;
         
