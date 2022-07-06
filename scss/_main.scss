@@ -59,11 +59,12 @@
 }
 
 .flecha-icono{
-        animation: bounce-in-top 2s 100ms infinite ;
-        padding: 30px 0px 10px 0px;
-        img{
-            width: 40px;
-        }
+    text-align: center;
+    animation: bounce-in-top 2s 100ms infinite ;
+    padding: 30px 0px 10px 0px;
+    img{
+        width: 40px;
+    }
 }
 
 
@@ -102,14 +103,19 @@
       transform: translateY(0);
       animation-timing-function: ease-out;
     }
-  }
+}
+
+.img-productos{
+    width: 2600px;
+    max-width: 100%;
+}
 
 .productos{
     text-align: center;
 }
 
 .titulo-productos{
-    padding: 20px 0px 10px 0px;
+    padding: 0px 0px 10px 0px;
     border-bottom: 1px solid #404a6c;
 }
 
@@ -144,7 +150,12 @@
     color: $color1;
 
     .titulo-juegos{ 
-        @include titulos($color2,$color1);
+        @include titulos($color2, $color1);
+        padding: 0px
+    }
+
+    .titulo-juegos-recomendados{
+        @include titulos($color2, $color1)
     }
 
     .cartas-juegos{
@@ -423,6 +434,10 @@
         }
     }
     
+    .img-productos{
+        max-height: 735px;
+    }
+
     .productos{
         .cartas-consolas{
             .carta-consola{
