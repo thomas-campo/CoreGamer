@@ -27,7 +27,6 @@
         .secciones{
             .lista-secciones{
                 display: inline-block;
-                padding: 10px 0px;
                 .nombres-secciones{
                     color: $color3 ;
                     font-weight: 700;
@@ -40,7 +39,15 @@
 
 /*vista desktop*/
 @media screen and (min-width: 992px){
+    .divNavBar{
+        width: 50%;
+        height: 50px;
+    }
     .barra-nav{
+        position: sticky;
+        transition: top 0.3s;
+        top: 0;
+        // z-index: 1000;
         .container-nav{
             .nombre-sitio{
                 font-size: xx-large;
@@ -52,6 +59,7 @@
                 justify-content: end;
                 
                 .lista-secciones{
+                    padding: 0;
                     padding-right: 20px;
                     
                     .nombres-secciones{

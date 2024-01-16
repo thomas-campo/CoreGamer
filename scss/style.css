@@ -1,0 +1,576 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #2b2626;
+}
+
+body {
+  color: #f0f8ff;
+  font-family: "Staatliches", cursive;
+}
+
+/*vista celular*/
+.barra-nav {
+  padding: 0;
+  margin: 0;
+}
+.barra-nav .container-nav {
+  background-color: #f0f8ff;
+  color: #f0f8ff;
+}
+.barra-nav .container-nav .nombre-sitio {
+  display: flex;
+  font-size: x-large;
+  font-weight: 700;
+  padding-left: 10px;
+  color: rgba(22, 21, 21, 0.9176470588);
+  transform: translate(0, 8px);
+}
+.barra-nav .container-nav .nombre-sitio .letra-nombre {
+  color: #da291d;
+}
+.barra-nav .container-nav .navbar-toggler {
+  border: none;
+}
+.barra-nav .container-nav .secciones .lista-secciones {
+  display: inline-block;
+}
+.barra-nav .container-nav .secciones .lista-secciones .nombres-secciones {
+  color: rgba(22, 21, 21, 0.9176470588);
+  font-weight: 700;
+}
+
+/*termina vista celular*/
+/*vista desktop*/
+@media screen and (min-width: 992px) {
+  .divNavBar {
+    width: 50%;
+    height: 50px;
+  }
+  .barra-nav {
+    position: sticky;
+    transition: top 0.3s;
+    top: 0;
+  }
+  .barra-nav .container-nav .nombre-sitio {
+    font-size: xx-large;
+    font-weight: 800;
+  }
+  .barra-nav .container-nav .secciones {
+    display: flex;
+    justify-content: end;
+  }
+  .barra-nav .container-nav .secciones .lista-secciones {
+    padding: 0;
+    padding-right: 20px;
+  }
+  .barra-nav .container-nav .secciones .lista-secciones .nombres-secciones:hover {
+    color: #da291d;
+  }
+  .barra-nav .container-nav .secciones .nombres-secciones {
+    font-size: large;
+    font-weight: 700;
+  }
+}
+/*empieza vista celular*/
+.boton-comprar {
+  margin-bottom: 4px;
+  padding: 4px 8px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: rgba(14, 13, 13, 0.9176470588);
+  color: #f0f8ff;
+}
+.boton-comprar:hover {
+  background-color: #da291d;
+}
+.boton-comprar .boton-a {
+  text-decoration: none;
+  color: #f0f8ff;
+}
+
+.flecha-icono {
+  text-align: center;
+  animation: bounce-in-top 2s 100ms infinite;
+  padding: 30px 0px 10px 0px;
+}
+.flecha-icono img {
+  width: 40px;
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-30px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-15px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-2px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+.img-productos {
+  width: 2600px;
+  max-width: 100%;
+}
+
+.productos {
+  text-align: center;
+}
+
+.titulo-productos {
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1px solid #404a6c;
+}
+
+.consolas {
+  margin: 18px 0px 0px 0px;
+  text-align: center;
+  background-color: #2b2626;
+  color: #f0f8ff;
+}
+.consolas .titulo-consola {
+  padding: 5px 0px;
+  text-align: center;
+  background-color: #2b2626;
+  color: #f0f8ff;
+  font-family: "Staatliches", cursive;
+}
+.consolas .cartas-consolas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.consolas .cartas-consolas .carta-consola {
+  border: 1px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px;
+  padding-bottom: 10px;
+  margin: 10px;
+  overflow: hidden;
+  background-color: #f0f8ff;
+  color: rgba(22, 21, 21, 0.9176470588);
+  width: 8rem;
+  font-size: 1rem;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.consolas .cartas-consolas .carta-consola:hover {
+  box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+  transform: translateY(-1%);
+}
+
+.juegos {
+  margin-bottom: 8px;
+  text-align: center;
+  background-color: #2b2626;
+  color: #f0f8ff;
+}
+.juegos .titulo-juegos {
+  padding: 5px 0px;
+  text-align: center;
+  background-color: #2b2626;
+  color: #f0f8ff;
+  font-family: "Staatliches", cursive;
+  padding: 0px;
+}
+.juegos .titulo-juegos-recomendados {
+  padding: 5px 0px;
+  text-align: center;
+  background-color: #2b2626;
+  color: #f0f8ff;
+  font-family: "Staatliches", cursive;
+}
+.juegos .cartas-juegos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.juegos .cartas-juegos .cartas {
+  border: 1px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px;
+  padding-bottom: 10px;
+  margin: 10px;
+  overflow: hidden;
+  background-color: #f0f8ff;
+  color: rgba(22, 21, 21, 0.9176470588);
+  width: 8rem;
+  font-size: 1rem;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.juegos .cartas-juegos .cartas:hover {
+  box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+  transform: translateY(-1%);
+}
+.juegos .cartas-juegos .cartas .img-elden-ring {
+  padding: 10px 0px 25px 0px;
+}
+.juegos .cartas-juegos .cartas .img-borderlands {
+  padding: 10px 0px 25px 0px;
+}
+.juegos .cartas-juegos .cartas .img-gta {
+  padding: 15px 0px 25px 0px;
+}
+.juegos .cartas-juegos .cartas .img-valhalla {
+  padding: 10px 0px 30px 0px;
+}
+
+.accesorios {
+  background-color: #2b2626;
+  color: #f0f8ff;
+  text-align: center;
+}
+.accesorios .titulo-accesorios {
+  padding: 5px 0px;
+  text-align: center;
+  background-color: #2b2626;
+  color: #f0f8ff;
+  font-family: "Staatliches", cursive;
+}
+.accesorios .cartas-accesorios {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.accesorios .cartas-accesorios .carta-accesorios {
+  border: 1px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px;
+  padding-bottom: 10px;
+  margin: 10px;
+  overflow: hidden;
+  background-color: #f0f8ff;
+  color: rgba(22, 21, 21, 0.9176470588);
+  width: 8rem;
+  font-size: 1rem;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.accesorios .cartas-accesorios .carta-accesorios .jostick-ps5 {
+  margin: 0px 0px 18px 0px;
+}
+.accesorios .cartas-accesorios .carta-accesorios .jostick-xbox {
+  margin: 5px 0px 12px 0px;
+}
+.accesorios .cartas-accesorios .carta-accesorios:hover {
+  box-shadow: 5px 5px 20px rgba(255, 254, 254, 0.4);
+  transform: translateY(-1%);
+}
+
+.banner {
+  margin: 10px 0px;
+  padding-top: 60px;
+}
+.banner .img-consolas {
+  width: 100%;
+  max-width: 100%;
+}
+
+.fondo-carrito {
+  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.carrito .titulo-carrito {
+  padding-top: 20px;
+  text-align: center;
+}
+.carrito .carrito-vacio {
+  padding-top: 20px;
+  text-align: center;
+}
+.carrito .añadir {
+  text-align: center;
+  padding: 165px 0px;
+  /*hover del boton añadir*/
+}
+.carrito .añadir .boton-añadir {
+  margin: 20px 0px;
+  background-color: #f0f8ff;
+  border-radius: 60px;
+  padding: 5px;
+  transition: all 400ms ease-in-out;
+}
+.carrito .añadir .boton-añadir:hover {
+  transform: translateY(-10%);
+}
+
+.contactos .titulo-contacto {
+  text-align: center;
+  margin: 20px 0px 10px 0px;
+}
+.contactos .informacion {
+  text-align: center;
+}
+
+.flex-contacto .mapa iframe {
+  width: 100%;
+  height: 544px;
+}
+.flex-contacto .escribinos {
+  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+  background-position: center;
+  padding: 124px 0px;
+}
+.flex-contacto .escribinos .caja-escribinos {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 0px;
+  text-align: center;
+  background-color: rgba(15, 17, 24, 0.459);
+  border-radius: 10px;
+}
+.flex-contacto .escribinos .caja-escribinos .form {
+  width: 300px;
+  padding: 15px 0px 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-contacto .escribinos .caja-escribinos .form .boton-enviar {
+  width: 320px;
+  padding: 6.5px;
+  border: 1px;
+  border-radius: 8px;
+  background-color: rgb(37, 37, 37);
+  color: #f0f8ff;
+}
+.flex-contacto .escribinos .caja-escribinos .form .boton-enviar:hover {
+  background-color: rgb(49, 49, 49);
+  color: rgba(240, 248, 255, 0.808);
+}
+.flex-contacto .escribinos .caja-escribinos .form .textarea {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.fondo-registrate {
+  background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+}
+.fondo-registrate .caja-registrate {
+  display: flex;
+  justify-content: center;
+}
+.fondo-registrate .caja-registrate .registrate {
+  width: 300px;
+  text-align: center;
+  padding: 18px 30px 15px 30px;
+  margin: 54px 0px;
+  background-color: rgba(15, 17, 24, 0.459);
+  border-radius: 12px;
+}
+.fondo-registrate .caja-registrate .registrate h1 {
+  padding-bottom: 5px;
+}
+.fondo-registrate .caja-registrate .registrate .form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fondo-registrate .caja-registrate .registrate .form .boton-enviar {
+  width: 240px;
+  padding: 6.5px;
+  border: 1px;
+  border-radius: 8px;
+  background-color: rgb(37, 37, 37);
+  color: #f0f8ff;
+}
+.fondo-registrate .caja-registrate .registrate .form .boton-enviar:hover {
+  background-color: rgb(49, 49, 49);
+  color: rgba(240, 248, 255, 0.808);
+}
+.fondo-registrate .caja-registrate .registrate .form .boton-iniciar1 {
+  width: 240px;
+  padding: 6.5px;
+  border: 1px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #da291d;
+  color: #f0f8ff;
+}
+.fondo-registrate .caja-registrate .registrate .form .boton-iniciar1 .img-logos {
+  width: 0.8em;
+  margin-right: 5px;
+}
+.fondo-registrate .caja-registrate .registrate .form .boton-iniciar1:hover {
+  background-color: rgb(177, 40, 31);
+}
+.fondo-registrate .caja-registrate .registrate .form .boton-iniciar2 {
+  width: 240px;
+  padding: 6.5px;
+  border: 1px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b5998;
+  color: #f0f8ff;
+}
+.fondo-registrate .caja-registrate .registrate .form .boton-iniciar2 .img-logos {
+  width: 0.99em;
+  margin-right: 5px;
+}
+.fondo-registrate .caja-registrate .registrate .form .boton-iniciar2:hover {
+  background-color: rgba(47, 72, 124, 0.8);
+}
+.fondo-registrate .caja-registrate .registrate .form .iniciar-sesion {
+  text-decoration: none;
+  color: #f0f8ff;
+}
+.fondo-registrate .caja-registrate .registrate .form .iniciar-sesion:hover {
+  color: rgba(240, 248, 255, 0.6);
+}
+
+/*termina vista celular*/
+/*empieza vista desktop*/
+@media screen and (min-width: 992px) {
+  .flecha-icono img {
+    width: 2.5%;
+  }
+  .juegos .cartas-juegos .cartas {
+    width: 18rem;
+  }
+  .juegos .cartas-juegos .cartas .img-elden-ring {
+    padding: 10px 0px 25px 0px;
+  }
+  .juegos .cartas-juegos .cartas .img-borderlands {
+    padding: 10px 0px 25px 0px;
+  }
+  .juegos .cartas-juegos .cartas .img-gta {
+    padding: 15px 0px 25px 0px;
+  }
+  .juegos .cartas-juegos .cartas .img-valhalla {
+    padding: 10px 0px 30px 0px;
+  }
+  .img-productos {
+    max-height: 735px;
+  }
+  .productos .cartas-consolas .carta-consola {
+    width: 18rem;
+  }
+  .accesorios .cartas-accesorios .carta-accesorios {
+    width: 18rem;
+  }
+  .accesorios .cartas-accesorios .carta-accesorios .jostick-xbox, .accesorios .cartas-accesorios .carta-accesorios .jostick-ps5 {
+    margin: 0;
+  }
+  .fondo-carrito {
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed 0px -50px;
+    background-size: cover;
+  }
+  .carrito .añadir {
+    padding: 230px 0px;
+  }
+  .informacion {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  .flex-contacto {
+    display: flex;
+  }
+  .flex-contacto .mapa {
+    flex-grow: 0.52;
+  }
+  .flex-contacto .mapa iframe {
+    height: 100%;
+  }
+  .flex-contacto .escribinos {
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+    background-size: cover;
+    text-align: center;
+    flex-grow: 0.48;
+  }
+  .flex-contacto .escribinos .formulario {
+    background-color: rgba(64, 74, 108, 0.8);
+  }
+  .flex-contacto .escribinos .formulario .form {
+    width: 228px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fondo-registrate .caja-registrate .registrate {
+    width: 380px;
+    margin: 150px 0px;
+  }
+  .fondo-registrate .caja-registrate .registrate .form .boton-enviar {
+    width: 320px;
+  }
+  .fondo-registrate .caja-registrate .registrate .form .boton-iniciar1 {
+    width: 320px;
+  }
+  .fondo-registrate .caja-registrate .registrate .form .boton-iniciar2 {
+    width: 320px;
+  }
+}
+/*empieza vista celular*/
+footer {
+  padding: 0px 2%;
+  text-align: center;
+  background-color: rgba(22, 21, 21, 0.9176470588);
+  color: #f0f8ff;
+}
+footer .navegacion {
+  text-align: center;
+}
+footer .logo-metodo-pago {
+  width: 4rem;
+}
+footer .logo-redes {
+  width: 3rem;
+}
+
+/*termina vista celular*/
+/*empieza vista desktop*/
+@media screen and (min-width: 992px) {
+  footer .quienes-somos {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -404,17 +404,18 @@
 
 /*empieza vista desktop*/
 @media screen and (min-width: 992px){
+    
     .flecha-icono{
         img{
             width: 2.5%;
         }
     }
-
+    
     .juegos{
         .cartas-juegos{
             .cartas{
                 width: 18rem;
-        
+                
                 .img-elden-ring{
                     padding: 10px 0px 25px 0px;
                 }
@@ -437,7 +438,7 @@
     .img-productos{
         max-height: 735px;
     }
-
+    
     .productos{
         .cartas-consolas{
             .carta-consola{
@@ -457,7 +458,7 @@
             }
         }
     }
-
+    
     .fondo-carrito{
         background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed 0px -50px;
         background-size: cover;
@@ -474,7 +475,7 @@
         justify-content: space-around;
         padding-top: 10px;
     }
-
+    
     .flex-contacto{
         display: flex;
         .mapa{
