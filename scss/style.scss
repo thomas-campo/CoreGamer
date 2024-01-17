@@ -4,7 +4,7 @@ $color3: #161515ea;
 $bg-boton-hover: #0e0d0dea;
 $bg-boton: #da291d;
 
-@import "body";
-@import "header";
-@import "main";
-@import "footer";
+@import "_body";
+@import "_header";
+@import "_main";
+@import "_footer";

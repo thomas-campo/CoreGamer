@@ -61,7 +61,7 @@
 .flecha-icono{
     text-align: center;
     animation: bounce-in-top 2s 100ms infinite ;
-    padding: 30px 0px 10px 0px;
+    padding: 25px 0px 10px 0px;
     img{
         width: 40px;
     }
@@ -70,21 +70,21 @@
 
 @keyframes bounce-in-top {
     0% {
-      transform: translateY(-30px);
+      transform: translateY(-12px);
       animation-timing-function: ease-in;
       opacity: 0;
     }
     38% {
-      transform: translateY(0);
+      transform: translateY(-5px);
       animation-timing-function: ease-out;
       opacity: 1;
     }
     55% {
-      transform: translateY(-15px);
+      transform: translateY(-10px);
       animation-timing-function: ease-in;
     }
     72% {
-      transform: translateY(0);
+      transform: translateY(-5px);
       animation-timing-function: ease-out;
     }
     81% {
@@ -92,15 +92,15 @@
       animation-timing-function: ease-in;
     }
     90% {
-      transform: translateY(0);
+      transform: translateY(-5px);
       animation-timing-function: ease-out;
     }
     95% {
-      transform: translateY(-2px);
+      transform: translateY(-6px);
       animation-timing-function: ease-in;
     }
     100% {
-      transform: translateY(0);
+      transform: translateY(-5px);
       animation-timing-function: ease-out;
     }
 }
@@ -116,7 +116,6 @@
 
 .titulo-productos{
     padding: 0px 0px 10px 0px;
-    border-bottom: 1px solid #404a6c;
 }
 
 .consolas{
@@ -244,18 +243,12 @@
 
 .carrito{
     .titulo-carrito{
-        padding-top: 20px;
-        text-align: center;
-    }
-    
-    .carrito-vacio{
-        padding-top: 20px;
+        padding-top: 10px;
         text-align: center;
     }
 
     .añadir{
         text-align: center;
-        padding: 165px 0px;
 
         .boton-añadir{
             margin: 20px 0px;
@@ -272,46 +265,43 @@
     }
 }
 
-.contactos{
-    .titulo-contacto{
-        text-align: center;
-        margin: 20px 0px 10px 0px;
-    }
-
+.contactoInfo{
+    
     .informacion{
-        text-align: center;
+        padding: 25px 0 15px 0;
     }
 }
 
-.flex-contacto{
+.sectionContacto{
+    background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+    background-position: center;
+}
+
+.contacto{
     .mapa{
+        padding: 40px;
         iframe{
-            width: 100%;
-            height: 544px;
+            
         }
     }
     
     .escribinos{
-        background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-        background-position: center;
-        padding: 124px 0px;
+        padding: 40px 0px;
         
         .caja-escribinos{
-            width: 350px;
+            width: 50%;
             margin-left: auto;
             margin-right: auto;
-            padding: 25px 0px;
+            padding: 10px 0px;
             text-align: center;
-            background-color: rgba(15, 17, 24, 0.459);
             border-radius: 10px;
+            background-color: rgba(15, 17, 24, 0.459);
             
             .form{
-                width: 300px;
-                padding: 15px 0px 0px 0px;
+                padding: 0 20px;
                 margin-left: auto;
                 margin-right: auto;
                 .boton-enviar{
-                    width: 320px;
                     padding: 6.5px;
                     border: 1px;
                     border-radius: 8px;
@@ -323,14 +313,13 @@
                     }
                 }
                 .textarea{
-                    width: 300px;
+                    width: 100%;
                     border-radius: 8px;
                 }
             }
         }
     }
 }
-
 
 .fondo-registrate{
     background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
@@ -343,7 +332,6 @@
             width: 300px;
             text-align: center;
             padding: 18px 30px 15px 30px;
-            margin: 54px 0px;
             background-color: rgba(15, 17, 24, 0.459);
             border-radius: 12px;
             h1{
@@ -351,10 +339,10 @@
             }
             .form{
                 width: 100%;
-                margin-left: auto;
-                margin-right: auto;
+                // margin-left: auto;
+                // margin-right: auto;
                 .boton-enviar{
-                    width: 240px;
+                    width: 100%;
                     padding: 6.5px;
                     border: 1px;
                     border-radius: 8px;
@@ -367,6 +355,7 @@
                 }
                 .boton-iniciar1{
                     @include botones-sumbit;
+                    width: 100%;
                     background-color: $bg-boton;
                     color: $color1;
                     .img-logos{
@@ -379,6 +368,7 @@
                 }
                 .boton-iniciar2{
                     @include botones-sumbit;
+                    width: 100%;
                     background-color: #3b5998;
                     color: $color1;
                     .img-logos{
@@ -400,11 +390,19 @@
         }
     }
 }
-/*termina vista celular*/
+// /*termina vista celular*/
 
 /*empieza vista desktop*/
 @media screen and (min-width: 992px){
-    
+    main{
+        padding-top: 50px;
+    }   
+
+    .bannerImg{
+        width: 100%;
+        height: 480px;
+    }
+
     .flecha-icono{
         img{
             width: 2.5%;
@@ -435,10 +433,6 @@
         }
     }
     
-    .img-productos{
-        max-height: 735px;
-    }
-    
     .productos{
         .cartas-consolas{
             .carta-consola{
@@ -459,37 +453,43 @@
         }
     }
     
-    .fondo-carrito{
-        background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed 0px -50px;
-        background-size: cover;
-    }
-
     .carrito{
+        .fondo-carrito{
+            background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed 0px -50px;
+            background-size: cover;
+            padding: 164px 0px;
+        }
+        .carrito-vacio{
+            text-align: center;
+        }
+
         .añadir{
-            padding: 230px 0px;
+            padding: 0px 0px;
         }
     }
 
     .informacion{
         display: flex;
         justify-content: space-around;
-        padding-top: 10px;
+    }
+
+    .sectionContacto{
+        background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
+            background-size: cover;
     }
     
-    .flex-contacto{
+    .contacto{
         display: flex;
         .mapa{
-            flex-grow: 0.52;
+            flex-grow: 0.15;
             iframe{
                 height: 100%;
             }
         }
     
         .escribinos{
-            background: url("https://www.wallpapertip.com/wmimgs/56-566631_halo-wars-2-wallpaper-4k.jpg") no-repeat fixed;
-            background-size: cover;
             text-align: center;
-            flex-grow: 0.48;
+            flex-grow: 0.85;
             
             .formulario{
                 background-color: #404a6ccc;
@@ -505,18 +505,9 @@
     .fondo-registrate{
         .caja-registrate{
             .registrate{
-                width: 380px;
-                margin: 150px 0px;
+                width: 400px;
+                margin: 30px 0px;
                 .form{
-                    .boton-enviar{
-                        width: 320px;
-                    }
-                    .boton-iniciar1{
-                        width: 320px;
-                    }
-                    .boton-iniciar2{
-                        width: 320px;
-                    }
                 }
             }
         }
